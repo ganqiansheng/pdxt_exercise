@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>914</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>示例程序</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_login_doctor_information">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QTableView" name="tableView_login_message">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>护士暂时离开</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_group_queue_information"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>914</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>日常操作</string>
+    </property>
+    <addaction name="action_login"/>
+    <addaction name="action_loginout"/>
+    <addaction name="action_edit_password"/>
+    <addaction name="separator"/>
+    <addaction name="action_publish_message"/>
+    <addaction name="action_publish_queue_message"/>
+    <addaction name="action_reset"/>
+    <addaction name="action_communication_message"/>
+    <addaction name="action_rooling_message"/>
+    <addaction name="action_take_number"/>
+    <addaction name="action_mass_deletion_number"/>
+    <addaction name="separator"/>
+    <addaction name="action_rest_noon"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>报表查询</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>系统管理</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_login"/>
+   <addaction name="action_loginout"/>
+   <addaction name="separator"/>
+   <addaction name="action_setting"/>
+   <addaction name="separator"/>
+   <addaction name="action_group_manage"/>
+   <addaction name="action_staff_manage"/>
+   <addaction name="action_display_manage"/>
+   <addaction name="action_sound_manage"/>
+   <addaction name="action_button_manage"/>
+   <addaction name="action_screen_manage"/>
+   <addaction name="action_call_manage"/>
+   <addaction name="action_priority_manage"/>
+   <addaction name="action_text_manage"/>
+   <addaction name="separator"/>
+   <addaction name="action_clear_screen"/>
+   <addaction name="separator"/>
+   <addaction name="action_help"/>
+  </widget>
+  <action name="action_login">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/login.png</normaloff>:/icon/icon/login.png</iconset>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+  </action>
+  <action name="action_loginout">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/logout.webp</normaloff>:/icon/icon/logout.webp</iconset>
+   </property>
+   <property name="text">
+    <string>登出</string>
+   </property>
+  </action>
+  <action name="action_edit_password">
+   <property name="text">
+    <string>修改密码</string>
+   </property>
+  </action>
+  <action name="action_publish_message">
+   <property name="text">
+    <string>发布公告</string>
+   </property>
+  </action>
+  <action name="action_publish_queue_message">
+   <property name="text">
+    <string>发布当前叫号</string>
+   </property>
+  </action>
+  <action name="action_reset">
+   <property name="text">
+    <string>复位</string>
+   </property>
+  </action>
+  <action name="action_communication_message">
+   <property name="text">
+    <string>通讯信息</string>
+   </property>
+  </action>
+  <action name="action_rooling_message">
+   <property name="text">
+    <string>滚动信息</string>
+   </property>
+  </action>
+  <action name="action_take_number">
+   <property name="text">
+    <string>取号</string>
+   </property>
+  </action>
+  <action name="action_mass_deletion_number">
+   <property name="text">
+    <string>批量消号</string>
+   </property>
+  </action>
+  <action name="action_rest_noon">
+   <property name="text">
+    <string>中午休息</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_setting">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/gear.ico</normaloff>:/icon/icon/gear.ico</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="action_group_manage">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/edit_group.ico</normaloff>:/icon/icon/edit_group.ico</iconset>
+   </property>
+   <property name="text">
+    <string>科室</string>
+   </property>
+  </action>
+  <action name="action_staff_manage">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/edit_user.ico</normaloff>:/icon/icon/edit_user.ico</iconset>
+   </property>
+   <property name="text">
+    <string>员工</string>
+   </property>
+  </action>
+  <action name="action_display_manage">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/thumbnail.ico</normaloff>:/icon/icon/thumbnail.ico</iconset>
+   </property>
+   <property name="text">
+    <string>显示</string>
+   </property>
+  </action>
+  <action name="action_sound_manage">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/irkickflash.ico</normaloff>:/icon/icon/irkickflash.ico</iconset>
+   </property>
+   <property name="text">
+    <string>语音</string>
+   </property>
+  </action>
+  <action name="action_button_manage">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/month.ico</normaloff>:/icon/icon/month.ico</iconset>
+   </property>
+   <property name="text">
+    <string>按钮</string>
+   </property>
+  </action>
+  <action name="action_screen_manage">
+   <property name="text">
+    <string>屏幕</string>
+   </property>
+  </action>
+  <action name="action_call_manage">
+   <property name="text">
+    <string>呼叫</string>
+   </property>
+  </action>
+  <action name="action_priority_manage">
+   <property name="text">
+    <string>优先</string>
+   </property>
+  </action>
+  <action name="action_text_manage">
+   <property name="text">
+    <string>文本</string>
+   </property>
+  </action>
+  <action name="action_clear_screen">
+   <property name="text">
+    <string>清屏</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
