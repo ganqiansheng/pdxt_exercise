@@ -39,8 +39,8 @@ class QGroupDetailSetting(QDialog):
         cursor = self.conn.cursor()
         querystr = "SELECT msid,msmc FROM t_yyms"
         cursor.execute(querystr)
-        cursor.close()
         sound_mode_detail_rows = cursor.fetchall()
+        cursor.close()
         sound_mode_detail_list = []
         for i in range(len(sound_mode_detail_rows)):
             sound_mode_detail_list.append(str(sound_mode_detail_rows[i][0]) + '.' + sound_mode_detail_rows[i][1])
