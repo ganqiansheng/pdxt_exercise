@@ -13,7 +13,9 @@ class QGroupSetting(QMainWindow):
         self.ui.setupUi(self)
         self.initUi()
         self.bind_event()
-
+        self.showdata()
+        self.conn.close()
+    def showdata(self):
         self.conn,result = database.server_connect()
         cursor = self.conn.cursor()
         querystr = """
@@ -30,34 +32,35 @@ class QGroupSetting(QMainWindow):
         group_rows = cursor.fetchall()
         cursor.close()
 
-        self.ui.tableWidget_group.setRowCount(len(group_rows))
-        self.ui.tableWidget_group.setColumnCount(len(group_rows[0]))
+        self.ui.tableWidget.setRowCount(len(group_rows))
+        self.ui.tableWidget.setColumnCount(len(group_rows[0]))
 
         horizontalHeadLabels = ['科室代码', '科室名称', '当前号码', '起始号码', '最大号码','状态','重排','前缀','语音','延时','选择医生','隐藏','合并','转入配号']
-        self.ui.tableWidget_group.setHorizontalHeaderLabels(
+        self.ui.tableWidget.setHorizontalHeaderLabels(
             horizontalHeadLabels)
         for i in range(len(group_rows)):
             for j in range(len(group_rows[0])):
                 item = QTableWidgetItem(str(group_rows[i][j]))
-                self.ui.tableWidget_group.setItem(i,j,item)
+                self.ui.tableWidget.setItem(i,j,item)
+
     def bind_event(self):
-        self.ui.tableWidget_group.itemDoubleClicked.connect(self.doubleClickTableWidget)
+        self.ui.tableWidget.itemDoubleClicked.connect(self.doubleClickTableWidget)
     def doubleClickTableWidget(self):
         self.on_action_open_triggered()
 
     def initUi(self):
-        self.ui.tableWidget_group.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.ui.tableWidget_group.setSelectionBehavior(QAbstractItemView.SelectRows)
-        self.ui.tableWidget_group.setAlternatingRowColors(True)
-        self.ui.tableWidget_group.setStyleSheet(
+        self.ui.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.ui.tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.ui.tableWidget.setAlternatingRowColors(True)
+        self.ui.tableWidget.setStyleSheet(
             "QTableView{background-color: rgb(250, 250, 250);alternate-background-color: rgb(234, 230, 234);}")  # 设置表格颜色
-        self.ui.tableWidget_group.verticalHeader().setHidden(True)
-        self.ui.tableWidget_group.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.ui.tableWidget.verticalHeader().setHidden(True)
+        self.ui.tableWidget.setContextMenuPolicy(Qt.CustomContextMenu)
 
     @pyqtSlot()
     def on_action_open_triggered(self):
-        currentRow = self.ui.tableWidget_group.currentIndex().row()
-        current_ksid = self.ui.tableWidget_group.item(currentRow,0).text()
+        currentRow = self.ui.tableWidget.currentIndex().row()
+        current_ksid = self.ui.tableWidget.item(currentRow,0).text()
 
         groupdetailsetting = QGroupDetailSetting(current_ksid)
         groupdetailsetting.exec()

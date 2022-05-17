@@ -62,6 +62,21 @@
        <property name="elideMode">
         <enum>Qt::ElideRight</enum>
        </property>
+       <property name="usesScrollButtons">
+        <bool>false</bool>
+       </property>
+       <property name="documentMode">
+        <bool>false</bool>
+       </property>
+       <property name="tabsClosable">
+        <bool>false</bool>
+       </property>
+       <property name="movable">
+        <bool>false</bool>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>false</bool>
+       </property>
        <widget class="QWidget" name="tab_waiting_patient_informatio">
         <attribute name="title">
          <string>等候病人列表</string>

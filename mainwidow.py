@@ -1,37 +1,29 @@
-from PyQt5.QtCore import *
-from PyQt5.QtSql import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-import pymssql
-import database
+from class_staff_setting import *
 from classgroupsetting import *
-
-from mainform import *
 from groupwaitinginforamtion import *
-import os
+from mainform import *
+
 
 class QMyMainWindow(QMainWindow):
     def __init__(self, parent=None):
         super(QMainWindow, self).__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        #一个护士站中最大的科室数量，如果超出此数量则部分科室不会在科室列表界面显示
+        # 一个护士站中最大的科室数量，如果超出此数量则部分科室不会在科室列表界面显示
         self.max_group_number_every_page = 6
-
 
         # self.pix = QBitmap('.'+ os.sep + 'images' + os.sep + 'mask.png')
         # self.pix.scaledToWidth(self.width())
         # self.setMask(self.pix)
-
         self.ui.tableView_login_message.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.ui.tableView_login_message.setSelectionMode(QAbstractItemView.SingleSelection)
+        # self.ui.tableView_login_message.setSelectionBehavior(QAbstractItemView.SelectRows)
+        # self.ui.tableView_login_message.setSelectionMode(QAbstractItemView.SingleSelection)
         # self.ui.tableView_login_message.horizontalHeader().setStretchLastSection(True)
         self.ui.tableView_login_message.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.ui.tableView_login_message.setAlternatingRowColors(True)
         self.ui.tableView_login_message.setStyleSheet(
             "QTableView{background-color: rgb(250, 250, 250);alternate-background-color: rgb(234, 228, 234);}")  # 设置表格颜色
-
-
 
         self.ui.tableView_login_message.setContextMenuPolicy(Qt.CustomContextMenu)
         self.ui.tableView_login_message.customContextMenuRequested.connect(self.login_message_generate_menu)
@@ -41,6 +33,11 @@ class QMyMainWindow(QMainWindow):
         self.set_tableView_login_message()
         # 显示右侧各科室病人等候情况窗
         self.set_group_waiting_inforamtion()
+
+    @pyqtSlot()
+    def on_action_staff_manage_triggered(self):
+        staffsetting = QStaffSetting(self)
+        staffsetting.show()
 
     @pyqtSlot()
     def on_action_group_manage_triggered(self):
@@ -78,7 +75,8 @@ class QMyMainWindow(QMainWindow):
 
         group_waiting_information_lists = []
         for i in range(len(rows)):
-            group_waiting_information_list = QGroupWaitingInformation('group_waiting_information_list_'+ rows[i][1] + '_'+rows[i][0])
+            group_waiting_information_list = QGroupWaitingInformation(
+                'group_waiting_information_list_' + rows[i][1] + '_' + rows[i][0])
             group_waiting_information_lists.append(group_waiting_information_list)
         # for i in range(len(rows)):
         #     group_waiting_information_list = QGroupWaitingInformation()
@@ -88,9 +86,10 @@ class QMyMainWindow(QMainWindow):
         print(len(group_waiting_information_lists))
 
         grid_group_waiting_information = QGridLayout(self.ui.frame_group_queue_information)
-        #如果科室数量小于设定的显示科室数量最大值，按科室数量显示
-        #如果科室数量大于设定的显示科室数量最大值，按设定的显示科室数量最大值显示
-        display_group_number = len(group_waiting_information_lists) if len(group_waiting_information_lists) < self.max_group_number_every_page else self.max_group_number_every_page
+        # 如果科室数量小于设定的显示科室数量最大值，按科室数量显示
+        # 如果科室数量大于设定的显示科室数量最大值，按设定的显示科室数量最大值显示
+        display_group_number = len(group_waiting_information_lists) if len(
+            group_waiting_information_lists) < self.max_group_number_every_page else self.max_group_number_every_page
         for i in range(display_group_number):
             row_no = i // 3
             col_no = i % 3
@@ -145,18 +144,18 @@ class QMyMainWindow(QMainWindow):
     # def group_waiting_information_generate_menu(self,pos):
     #     print(pos)
 
-    def login_message_generate_menu(self,pos):
+    def login_message_generate_menu(self, pos):
         print(pos)
         currentRow = self.ui.tableView_login_message.currentIndex().row()
-        if currentRow == -1 :
+        if currentRow == -1:
             QMessageBox.warning(self, '提示', '没有数据')
 
         # ii = self.ui.tableView_login_message.selectionModel().selection().indexes()
         # i = ii[0].row()
-        doctor_No = self.model.item(currentRow,2).text()
-        room_No = self.model.item(currentRow,3).text()
-        waiting_number = self.model.item(currentRow,4).text()
-        finished_number = self.model.item(currentRow,5).text()
+        doctor_No = self.model.item(currentRow, 2).text()
+        room_No = self.model.item(currentRow, 3).text()
+        waiting_number = self.model.item(currentRow, 4).text()
+        finished_number = self.model.item(currentRow, 5).text()
         print(doctor_No)
 
         menu = QMenu()
@@ -172,10 +171,8 @@ class QMyMainWindow(QMainWindow):
 
         if action == item5:
             self.set_tableView_login_message()
-        else :
+        else:
             pass
-
-
 
     def set_tableView_login_message(self):
         cursor = self.conn.cursor()
@@ -197,23 +194,23 @@ class QMyMainWindow(QMainWindow):
         cursor.close()
 
         if len(rows) < 1:
-            QMessageBox.critical(self, '提示', '没有查询到任何数据')
+            # QMessageBox.critical(self, '提示', '没有查询到任何数据')
+            pass
             return
         # self.ui.tableView_login_message.set
         self.model = QStandardItemModel()
         self.model.setColumnCount(6)
         self.model.setRowCount(len(rows))
-        rowlist = ['终端号','工号','姓名','诊室','候诊','已诊']
+        rowlist = ['终端号', '工号', '姓名', '诊室', '候诊', '已诊']
         self.model.setHorizontalHeaderLabels(rowlist)
         self.ui.tableView_login_message.setModel(self.model)
-        self.ui.tableView_login_message.setColumnHidden(0,True)
-        self.ui.tableView_login_message.setColumnHidden(1,True)
+        self.ui.tableView_login_message.setColumnHidden(0, True)
+        self.ui.tableView_login_message.setColumnHidden(1, True)
 
         for i in range(len(rows)):
             for j in range(len(rows[0])):
                 item = QStandardItem(str(rows[i][j]))
-                self.model.setItem(i,j,item)
-
+                self.model.setItem(i, j, item)
 
         # self.qryModel = QSqlQueryModel(self)
         # querystr = """
@@ -265,13 +262,11 @@ class QMyMainWindow(QMainWindow):
         # while (myqurey.next()):
         #     print(myqurey.value(0))
 
-
     def __openTable(self):
-        self.conn,success = database.server_connect()
+        self.conn, success = database.server_connect()
         if not success:
             QMessageBox.critical(self, '错误提示', '数据库打开错误')
             return
-
 
         # host = '192.168.1.16'
         # user = 'sa'
@@ -285,13 +280,6 @@ class QMyMainWindow(QMainWindow):
         # else:
         #     # QMessageBox.critical(self, '提示', '数据库打开成功')
         #     pass
-
-
-
-
-
-
-
 
         # print(QSqlDatabase.drivers())
         # self.db = QSqlDatabase.addDatabase('QODBC')
@@ -383,6 +371,3 @@ class QMyMainWindow(QMainWindow):
         #     print(rec.fieldName(i))
         # while (myqurey.next()):
         #     print(myqurey.value(0))
-
-
-

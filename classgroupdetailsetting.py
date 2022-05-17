@@ -30,20 +30,25 @@ class QGroupDetailSetting(QDialog):
         self.bind_event()
         self.ksid = ksid
         self.conn, result = database.server_connect()
+        self.init_sound_mode()
         self.read_setting_information()
 
-    def read_setting_information(self):
+    def init_sound_mode(self):
         # 初始化语音模式下拉框
         self.ui.comboBox_yyms.addItem('0.Null')
         cursor = self.conn.cursor()
         querystr = "SELECT msid,msmc FROM t_yyms"
         cursor.execute(querystr)
+        cursor.close()
         sound_mode_detail_rows = cursor.fetchall()
         sound_mode_detail_list = []
         for i in range(len(sound_mode_detail_rows)):
             sound_mode_detail_list.append(str(sound_mode_detail_rows[i][0]) + '.' + sound_mode_detail_rows[i][1])
         self.ui.comboBox_yyms.addItems(sound_mode_detail_list)
 
+
+    def read_setting_information(self):
+        cursor = self.conn.cursor()
         selectstr = """
                         SELECT ksid as '0科室代码',
                                 ksmc as '1科室名称',
@@ -77,14 +82,14 @@ class QGroupDetailSetting(QDialog):
         self.ui.lineEdit_qshm.setText(group_detail_rows[0][3])
         self.ui.lineEdit_zdhm.setText(group_detail_rows[0][4])
         self.ui.lineEdit_memo.setText(group_detail_rows[0][5])
-        self.ui.lineEdit_hmqz.setText(group_detail_rows[0][8])
-        indexes_yyms = [i for i in range(self.ui.comboBox_yyms.count()) if self.ui.comboBox_yyms.itemText(i).startswith(str(group_detail_rows[0][9]))]
-        if not len(indexes_yyms) == 0:
-            self.ui.comboBox_yyms.setCurrentIndex(indexes_yyms[0])
 
         self.ui.radioButton_valid.setChecked(True if group_detail_rows[0][6] == '0' else False)
         self.ui.radioButton_invalid.setChecked(True if group_detail_rows[0][6] == '1' else False)
         self.ui.checkBox_resort.setChecked(True if group_detail_rows[0][7] == 1 else False)
+        self.ui.lineEdit_hmqz.setText(group_detail_rows[0][8])
+        indexes_yyms = [i for i in range(self.ui.comboBox_yyms.count()) if self.ui.comboBox_yyms.itemText(i).startswith(str(group_detail_rows[0][9]))]
+        if not len(indexes_yyms) == 0:
+            self.ui.comboBox_yyms.setCurrentIndex(indexes_yyms[0])
         indexes_delay_time = [i for i in range(self.ui.comboBox_delaytime.count()) if self.ui.comboBox_delaytime.itemText(i) == group_detail_rows[0][10]]
         if not len(indexes_delay_time) == 0:
             self.ui.comboBox_delaytime.setCurrentIndex(indexes_delay_time[0])

@@ -27,8 +27,6 @@ class QGroupWaitingInformation(QWidget):
         self.bind_event()
         self.show_group_waiting_information()
 
-        self.ui.tabWidget.setStyleSheet(
-            "QTabWidget{border: none;}")  # 设置QTabWidget边框
 
 
     def show_group_waiting_information(self):
@@ -100,6 +98,24 @@ class QGroupWaitingInformation(QWidget):
         self.ui.tableWidget_group_waiting_information.setAlternatingRowColors(True)
         self.ui.tableWidget_group_waiting_information.setStyleSheet(
             "QTableView{background-color: rgb(250, 250, 250);alternate-background-color: rgb(234, 230, 234);}")  # 设置表格颜色
+
+        self.ui.tableWidget_group_waiting_information.setStyleSheet(
+            "QTableWidget{border:1px solid #EFEAEF;}"
+        )
+        # 设置QTabWidget边框
+        self.ui.tabWidget.setStyleSheet("QTabWidget::pane{top:20px;border: none;}")
+        self.ui.tabWidget.setStyleSheet('''
+            QTabWidget>QTabBar::tab:hover{background:rgba(155, 230, 155,80%);}
+            QTabWidget>QTabBar::tab{
+                        border:1px;
+                        margin-top:0px; 			#设置边距
+                        margin-right:0px;
+                        margin-left:0px;
+                        margin-bottom:0px;
+                    }
+        ''')
+
+
         self.ui.tableWidget_group_waiting_information.verticalHeader().setHidden(True)
         self.ui.tableWidget_group_waiting_information.setContextMenuPolicy(Qt.CustomContextMenu)
         self.ui.tableWidget_group_waiting_information.setMouseTracking(True)
@@ -174,7 +190,7 @@ class QGroupWaitingInformation(QWidget):
 
     def eventFilter(self,object,event):
         if object is self.ui.tableWidget_group_waiting_information:
-            self.setCursor(Qt.OpenHandCursor)
+            self.setCursor(Qt.ArrowCursor)
             if event.type() == QEvent.ToolTip:
                 print('鼠标的当前位置为：',event.pos())
                 self.update_tooltip_signal.emit(event.pos())
