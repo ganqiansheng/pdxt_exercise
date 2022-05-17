@@ -91,8 +91,8 @@ class QMyMainWindow(QMainWindow):
         display_group_number = len(group_waiting_information_lists) if len(
             group_waiting_information_lists) < self.max_group_number_every_page else self.max_group_number_every_page
         for i in range(display_group_number):
-            row_no = i // 3
-            col_no = i % 3
+            row_no = i // (display_group_number // 2 + display_group_number % 2)
+            col_no = i % (display_group_number // 2 + display_group_number % 2)
             grid_group_waiting_information.addWidget(group_waiting_information_lists[i], row_no, col_no)
             print(group_waiting_information_lists[i].objectName())
             # group_id = group_waiting_information_lists[i].objectName().split('_')[-1]
