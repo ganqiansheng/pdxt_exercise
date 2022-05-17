@@ -19,11 +19,11 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
-        self.tableWidget_group = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget_group.setObjectName("tableWidget_group")
-        self.tableWidget_group.setColumnCount(0)
-        self.tableWidget_group.setRowCount(0)
-        self.gridLayout.addWidget(self.tableWidget_group, 0, 0, 1, 1)
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(0)
+        self.tableWidget.setRowCount(0)
+        self.gridLayout.addWidget(self.tableWidget, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 24))
@@ -60,7 +60,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "科室设置"))
         self.toolBar.setWindowTitle(_translate("MainWindow", "toolBar"))
         self.action_new.setText(_translate("MainWindow", "新建"))
         self.action_open.setText(_translate("MainWindow", "打开"))
