@@ -1,0 +1,880 @@
+[2022-05-18T11:57:25.908557 572560] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:25.908557 572560] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) base_dir = 
+[2022-05-18T11:57:25.908557 572560] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:25.908557 572560] Config: (default) compiler = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:25.908557 572560] Config: (default) compiler_type = auto
+[2022-05-18T11:57:25.908557 572560] Config: (default) compression = true
+[2022-05-18T11:57:25.908557 572560] Config: (default) compression_level = 0
+[2022-05-18T11:57:25.908557 572560] Config: (default) cpp_extension = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) debug = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) debug_dir = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) depend_mode = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) direct_mode = true
+[2022-05-18T11:57:25.908557 572560] Config: (default) disable = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) file_clone = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) hard_link = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) hash_dir = true
+[2022-05-18T11:57:25.908557 572560] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) ignore_options = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) inode_cache = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:25.908557 572560] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:25.908557 572560] Config: (default) max_files = 0
+[2022-05-18T11:57:25.908557 572560] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:25.908557 572560] Config: (default) path = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) prefix_command = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) read_only = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) read_only_direct = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) recache = false
+[2022-05-18T11:57:25.908557 572560] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:25.908557 572560] Config: (default) sloppiness = 
+[2022-05-18T11:57:25.908557 572560] Config: (default) stats = true
+[2022-05-18T11:57:25.908557 572560] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:25.908557 572560] Config: (default) umask = 
+[2022-05-18T11:57:25.910085 572560] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o __constants.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src __constants.c
+[2022-05-18T11:57:25.910615 572560] Hostname: unknown
+[2022-05-18T11:57:25.910678 572560] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:25.910776 572560] Compiler type: gcc
+[2022-05-18T11:57:25.912433 572560] Source file: __constants.c
+[2022-05-18T11:57:25.912487 572560] Object file: __constants.o
+[2022-05-18T11:57:25.913089 572560] Trying direct lookup
+[2022-05-18T11:57:25.914589 572560] No manifest with name f134hdb09h3pkg4u06ssjg1qh7uptok5g in the cache
+[2022-05-18T11:57:25.926025 572560] Running preprocessor
+[2022-05-18T11:57:26.032446 405824] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:26.032446 405824] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) base_dir = 
+[2022-05-18T11:57:26.032446 405824] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:26.032446 405824] Config: (default) compiler = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:26.032446 405824] Config: (default) compiler_type = auto
+[2022-05-18T11:57:26.032446 405824] Config: (default) compression = true
+[2022-05-18T11:57:26.032446 405824] Config: (default) compression_level = 0
+[2022-05-18T11:57:26.032446 405824] Config: (default) cpp_extension = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) debug = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) debug_dir = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) depend_mode = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) direct_mode = true
+[2022-05-18T11:57:26.032446 405824] Config: (default) disable = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) file_clone = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) hard_link = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) hash_dir = true
+[2022-05-18T11:57:26.032446 405824] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) ignore_options = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) inode_cache = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:26.032446 405824] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:26.032446 405824] Config: (default) max_files = 0
+[2022-05-18T11:57:26.032446 405824] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:26.032446 405824] Config: (default) path = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) prefix_command = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) read_only = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) read_only_direct = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) recache = false
+[2022-05-18T11:57:26.032446 405824] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:26.032446 405824] Config: (default) sloppiness = 
+[2022-05-18T11:57:26.032446 405824] Config: (default) stats = true
+[2022-05-18T11:57:26.032446 405824] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:26.032446 405824] Config: (default) umask = 
+[2022-05-18T11:57:26.033037 405824] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o __helpers.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src __helpers.c
+[2022-05-18T11:57:26.033151 405824] Hostname: unknown
+[2022-05-18T11:57:26.033195 405824] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:26.033228 405824] Compiler type: gcc
+[2022-05-18T11:57:26.034621 405824] Source file: __helpers.c
+[2022-05-18T11:57:26.034676 405824] Object file: __helpers.o
+[2022-05-18T11:57:26.035146 405824] Trying direct lookup
+[2022-05-18T11:57:26.036316 405824] No manifest with name 067bliqihstj3dsi3dc1stp1ivrpqo8h8 in the cache
+[2022-05-18T11:57:26.047211 405824] Running preprocessor
+[2022-05-18T11:57:26.378694 277372] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:26.378694 277372] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) base_dir = 
+[2022-05-18T11:57:26.378694 277372] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:26.378694 277372] Config: (default) compiler = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:26.378694 277372] Config: (default) compiler_type = auto
+[2022-05-18T11:57:26.378694 277372] Config: (default) compression = true
+[2022-05-18T11:57:26.378694 277372] Config: (default) compression_level = 0
+[2022-05-18T11:57:26.378694 277372] Config: (default) cpp_extension = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) debug = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) debug_dir = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) depend_mode = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) direct_mode = true
+[2022-05-18T11:57:26.378694 277372] Config: (default) disable = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) file_clone = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) hard_link = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) hash_dir = true
+[2022-05-18T11:57:26.378694 277372] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) ignore_options = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) inode_cache = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:26.378694 277372] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:26.378694 277372] Config: (default) max_files = 0
+[2022-05-18T11:57:26.378694 277372] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:26.378694 277372] Config: (default) path = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) prefix_command = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) read_only = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) read_only_direct = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) recache = false
+[2022-05-18T11:57:26.378694 277372] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:26.378694 277372] Config: (default) sloppiness = 
+[2022-05-18T11:57:26.378694 277372] Config: (default) stats = true
+[2022-05-18T11:57:26.378694 277372] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:26.378694 277372] Config: (default) umask = 
+[2022-05-18T11:57:26.379229 277372] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o __loader.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src __loader.c
+[2022-05-18T11:57:26.379327 277372] Hostname: unknown
+[2022-05-18T11:57:26.379365 277372] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:26.379394 277372] Compiler type: gcc
+[2022-05-18T11:57:26.380662 277372] Source file: __loader.c
+[2022-05-18T11:57:26.380713 277372] Object file: __loader.o
+[2022-05-18T11:57:26.381124 277372] Trying direct lookup
+[2022-05-18T11:57:26.382321 277372] No manifest with name 2f7cktng2d238uc50cbk90c2bfnjp02hi in the cache
+[2022-05-18T11:57:26.389516 277372] Running preprocessor
+[2022-05-18T11:57:26.727270 570744] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:26.727270 570744] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) base_dir = 
+[2022-05-18T11:57:26.727270 570744] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:26.727270 570744] Config: (default) compiler = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:26.727270 570744] Config: (default) compiler_type = auto
+[2022-05-18T11:57:26.727270 570744] Config: (default) compression = true
+[2022-05-18T11:57:26.727270 570744] Config: (default) compression_level = 0
+[2022-05-18T11:57:26.727270 570744] Config: (default) cpp_extension = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) debug = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) debug_dir = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) depend_mode = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) direct_mode = true
+[2022-05-18T11:57:26.727270 570744] Config: (default) disable = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) file_clone = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) hard_link = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) hash_dir = true
+[2022-05-18T11:57:26.727270 570744] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) ignore_options = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) inode_cache = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:26.727270 570744] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:26.727270 570744] Config: (default) max_files = 0
+[2022-05-18T11:57:26.727270 570744] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:26.727270 570744] Config: (default) path = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) prefix_command = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) read_only = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) read_only_direct = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) recache = false
+[2022-05-18T11:57:26.727270 570744] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:26.727270 570744] Config: (default) sloppiness = 
+[2022-05-18T11:57:26.727270 570744] Config: (default) stats = true
+[2022-05-18T11:57:26.727270 570744] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:26.727270 570744] Config: (default) umask = 
+[2022-05-18T11:57:26.727917 570744] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o module.PyQt5-preLoad.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src module.PyQt5-preLoad.c
+[2022-05-18T11:57:26.728038 570744] Hostname: unknown
+[2022-05-18T11:57:26.728085 570744] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:26.728120 570744] Compiler type: gcc
+[2022-05-18T11:57:26.729735 570744] Source file: module.PyQt5-preLoad.c
+[2022-05-18T11:57:26.729793 570744] Object file: module.PyQt5-preLoad.o
+[2022-05-18T11:57:26.730290 570744] Trying direct lookup
+[2022-05-18T11:57:26.731665 570744] No manifest with name 3c7adnt0d3dkde2n1ostoac744o8667ic in the cache
+[2022-05-18T11:57:26.743440 570744] Running preprocessor
+[2022-05-18T11:57:27.129661 567308] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:27.129661 567308] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) base_dir = 
+[2022-05-18T11:57:27.129661 567308] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:27.129661 567308] Config: (default) compiler = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:27.129661 567308] Config: (default) compiler_type = auto
+[2022-05-18T11:57:27.129661 567308] Config: (default) compression = true
+[2022-05-18T11:57:27.129661 567308] Config: (default) compression_level = 0
+[2022-05-18T11:57:27.129661 567308] Config: (default) cpp_extension = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) debug = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) debug_dir = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) depend_mode = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) direct_mode = true
+[2022-05-18T11:57:27.129661 567308] Config: (default) disable = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) file_clone = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) hard_link = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) hash_dir = true
+[2022-05-18T11:57:27.129661 567308] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) ignore_options = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) inode_cache = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:27.129661 567308] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:27.129661 567308] Config: (default) max_files = 0
+[2022-05-18T11:57:27.129661 567308] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:27.129661 567308] Config: (default) path = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) prefix_command = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) read_only = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) read_only_direct = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) recache = false
+[2022-05-18T11:57:27.129661 567308] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:27.129661 567308] Config: (default) sloppiness = 
+[2022-05-18T11:57:27.129661 567308] Config: (default) stats = true
+[2022-05-18T11:57:27.129661 567308] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:27.129661 567308] Config: (default) umask = 
+[2022-05-18T11:57:27.130219 567308] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o module.PyQt5.QtCore-postLoad.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src module.PyQt5.QtCore-postLoad.c
+[2022-05-18T11:57:27.130328 567308] Hostname: unknown
+[2022-05-18T11:57:27.130369 567308] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:27.130400 567308] Compiler type: gcc
+[2022-05-18T11:57:27.131770 567308] Source file: module.PyQt5.QtCore-postLoad.c
+[2022-05-18T11:57:27.131845 567308] Object file: module.PyQt5.QtCore-postLoad.o
+[2022-05-18T11:57:27.132300 567308] Trying direct lookup
+[2022-05-18T11:57:27.133540 567308] No manifest with name 351500p2bv2hfvd2okk6njnsj33tmr54i in the cache
+[2022-05-18T11:57:27.141295 567308] Running preprocessor
+[2022-05-18T11:57:27.460911 574392] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:27.460911 574392] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) base_dir = 
+[2022-05-18T11:57:27.460911 574392] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:27.460911 574392] Config: (default) compiler = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:27.460911 574392] Config: (default) compiler_type = auto
+[2022-05-18T11:57:27.460911 574392] Config: (default) compression = true
+[2022-05-18T11:57:27.460911 574392] Config: (default) compression_level = 0
+[2022-05-18T11:57:27.460911 574392] Config: (default) cpp_extension = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) debug = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) debug_dir = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) depend_mode = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) direct_mode = true
+[2022-05-18T11:57:27.460911 574392] Config: (default) disable = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) file_clone = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) hard_link = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) hash_dir = true
+[2022-05-18T11:57:27.460911 574392] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) ignore_options = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) inode_cache = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:27.460911 574392] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:27.460911 574392] Config: (default) max_files = 0
+[2022-05-18T11:57:27.460911 574392] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:27.460911 574392] Config: (default) path = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) prefix_command = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) read_only = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) read_only_direct = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) recache = false
+[2022-05-18T11:57:27.460911 574392] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:27.460911 574392] Config: (default) sloppiness = 
+[2022-05-18T11:57:27.460911 574392] Config: (default) stats = true
+[2022-05-18T11:57:27.460911 574392] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:27.460911 574392] Config: (default) umask = 
+[2022-05-18T11:57:27.461442 574392] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o module.PyQt5.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src module.PyQt5.c
+[2022-05-18T11:57:27.461545 574392] Hostname: unknown
+[2022-05-18T11:57:27.461583 574392] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:27.461611 574392] Compiler type: gcc
+[2022-05-18T11:57:27.462981 574392] Source file: module.PyQt5.c
+[2022-05-18T11:57:27.463027 574392] Object file: module.PyQt5.o
+[2022-05-18T11:57:27.463430 574392] Trying direct lookup
+[2022-05-18T11:57:27.464637 574392] No manifest with name fee6i9jog3d7su091l2d66rhvt6ar5c7u in the cache
+[2022-05-18T11:57:27.471895 574392] Running preprocessor
+[2022-05-18T11:57:27.800117 570256] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:27.800117 570256] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) base_dir = 
+[2022-05-18T11:57:27.800117 570256] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:27.800117 570256] Config: (default) compiler = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:27.800117 570256] Config: (default) compiler_type = auto
+[2022-05-18T11:57:27.800117 570256] Config: (default) compression = true
+[2022-05-18T11:57:27.800117 570256] Config: (default) compression_level = 0
+[2022-05-18T11:57:27.800117 570256] Config: (default) cpp_extension = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) debug = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) debug_dir = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) depend_mode = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) direct_mode = true
+[2022-05-18T11:57:27.800117 570256] Config: (default) disable = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) file_clone = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) hard_link = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) hash_dir = true
+[2022-05-18T11:57:27.800117 570256] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) ignore_options = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) inode_cache = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:27.800117 570256] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:27.800117 570256] Config: (default) max_files = 0
+[2022-05-18T11:57:27.800117 570256] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:27.800117 570256] Config: (default) path = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) prefix_command = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) read_only = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) read_only_direct = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) recache = false
+[2022-05-18T11:57:27.800117 570256] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:27.800117 570256] Config: (default) sloppiness = 
+[2022-05-18T11:57:27.800117 570256] Config: (default) stats = true
+[2022-05-18T11:57:27.800117 570256] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:27.800117 570256] Config: (default) umask = 
+[2022-05-18T11:57:27.800866 570256] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o module.__main__.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src module.__main__.c
+[2022-05-18T11:57:27.800999 570256] Hostname: unknown
+[2022-05-18T11:57:27.801054 570256] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:27.801098 570256] Compiler type: gcc
+[2022-05-18T11:57:27.802932 570256] Source file: module.__main__.c
+[2022-05-18T11:57:27.802993 570256] Object file: module.__main__.o
+[2022-05-18T11:57:27.803548 570256] Trying direct lookup
+[2022-05-18T11:57:27.805141 570256] No manifest with name 3b288eq5r9aukviplr013jglcoj2pf45o in the cache
+[2022-05-18T11:57:27.815744 570256] Running preprocessor
+[2022-05-18T11:57:28.156465 573044] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:28.156465 573044] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) base_dir = 
+[2022-05-18T11:57:28.156465 573044] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:28.156465 573044] Config: (default) compiler = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:28.156465 573044] Config: (default) compiler_type = auto
+[2022-05-18T11:57:28.156465 573044] Config: (default) compression = true
+[2022-05-18T11:57:28.156465 573044] Config: (default) compression_level = 0
+[2022-05-18T11:57:28.156465 573044] Config: (default) cpp_extension = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) debug = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) debug_dir = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) depend_mode = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) direct_mode = true
+[2022-05-18T11:57:28.156465 573044] Config: (default) disable = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) file_clone = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) hard_link = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) hash_dir = true
+[2022-05-18T11:57:28.156465 573044] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) ignore_options = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) inode_cache = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:28.156465 573044] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:28.156465 573044] Config: (default) max_files = 0
+[2022-05-18T11:57:28.156465 573044] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:28.156465 573044] Config: (default) path = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) prefix_command = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) read_only = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) read_only_direct = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) recache = false
+[2022-05-18T11:57:28.156465 573044] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:28.156465 573044] Config: (default) sloppiness = 
+[2022-05-18T11:57:28.156465 573044] Config: (default) stats = true
+[2022-05-18T11:57:28.156465 573044] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:28.156465 573044] Config: (default) umask = 
+[2022-05-18T11:57:28.157090 573044] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o static_src\MainProgram.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src static_src\MainProgram.c
+[2022-05-18T11:57:28.157199 573044] Hostname: unknown
+[2022-05-18T11:57:28.157241 573044] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:28.157272 573044] Compiler type: gcc
+[2022-05-18T11:57:28.158647 573044] Source file: static_src\MainProgram.c
+[2022-05-18T11:57:28.158704 573044] Object file: static_src\MainProgram.o
+[2022-05-18T11:57:28.159152 573044] Trying direct lookup
+[2022-05-18T11:57:28.160646 573044] No manifest with name 0ae4s32s0onu7u752ojjh9ehq0otc2sg0 in the cache
+[2022-05-18T11:57:28.168765 573044] Running preprocessor
+[2022-05-18T11:57:28.537738 571720] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:28.537738 571720] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) base_dir = 
+[2022-05-18T11:57:28.537738 571720] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:28.537738 571720] Config: (default) compiler = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:28.537738 571720] Config: (default) compiler_type = auto
+[2022-05-18T11:57:28.537738 571720] Config: (default) compression = true
+[2022-05-18T11:57:28.537738 571720] Config: (default) compression_level = 0
+[2022-05-18T11:57:28.537738 571720] Config: (default) cpp_extension = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) debug = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) debug_dir = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) depend_mode = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) direct_mode = true
+[2022-05-18T11:57:28.537738 571720] Config: (default) disable = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) file_clone = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) hard_link = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) hash_dir = true
+[2022-05-18T11:57:28.537738 571720] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) ignore_options = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) inode_cache = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:28.537738 571720] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:28.537738 571720] Config: (default) max_files = 0
+[2022-05-18T11:57:28.537738 571720] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:28.537738 571720] Config: (default) path = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) prefix_command = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) read_only = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) read_only_direct = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) recache = false
+[2022-05-18T11:57:28.537738 571720] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:28.537738 571720] Config: (default) sloppiness = 
+[2022-05-18T11:57:28.537738 571720] Config: (default) stats = true
+[2022-05-18T11:57:28.537738 571720] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:28.537738 571720] Config: (default) umask = 
+[2022-05-18T11:57:28.538381 571720] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o static_src\CompiledCellType.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledCellType.c
+[2022-05-18T11:57:28.538538 571720] Hostname: unknown
+[2022-05-18T11:57:28.538589 571720] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:28.538624 571720] Compiler type: gcc
+[2022-05-18T11:57:28.540245 571720] Source file: static_src\CompiledCellType.c
+[2022-05-18T11:57:28.540302 571720] Object file: static_src\CompiledCellType.o
+[2022-05-18T11:57:28.540812 571720] Trying direct lookup
+[2022-05-18T11:57:28.542280 571720] No manifest with name ff1cf2akeo3uorpk2q23d0n5jpi1mv7a0 in the cache
+[2022-05-18T11:57:28.553458 571720] Running preprocessor
+[2022-05-18T11:57:28.966828 569360] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:28.966828 569360] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) base_dir = 
+[2022-05-18T11:57:28.966828 569360] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:28.966828 569360] Config: (default) compiler = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:28.966828 569360] Config: (default) compiler_type = auto
+[2022-05-18T11:57:28.966828 569360] Config: (default) compression = true
+[2022-05-18T11:57:28.966828 569360] Config: (default) compression_level = 0
+[2022-05-18T11:57:28.966828 569360] Config: (default) cpp_extension = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) debug = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) debug_dir = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) depend_mode = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) direct_mode = true
+[2022-05-18T11:57:28.966828 569360] Config: (default) disable = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) file_clone = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) hard_link = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) hash_dir = true
+[2022-05-18T11:57:28.966828 569360] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) ignore_options = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) inode_cache = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:28.966828 569360] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:28.966828 569360] Config: (default) max_files = 0
+[2022-05-18T11:57:28.966828 569360] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:28.966828 569360] Config: (default) path = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) prefix_command = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) read_only = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) read_only_direct = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) recache = false
+[2022-05-18T11:57:28.966828 569360] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:28.966828 569360] Config: (default) sloppiness = 
+[2022-05-18T11:57:28.966828 569360] Config: (default) stats = true
+[2022-05-18T11:57:28.966828 569360] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:28.966828 569360] Config: (default) umask = 
+[2022-05-18T11:57:28.967342 569360] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o static_src\CompiledFunctionType.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledFunctionType.c
+[2022-05-18T11:57:28.967402 569360] Hostname: unknown
+[2022-05-18T11:57:28.967436 569360] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:28.967465 569360] Compiler type: gcc
+[2022-05-18T11:57:28.968859 569360] Source file: static_src\CompiledFunctionType.c
+[2022-05-18T11:57:28.968906 569360] Object file: static_src\CompiledFunctionType.o
+[2022-05-18T11:57:28.969326 569360] Trying direct lookup
+[2022-05-18T11:57:28.970591 569360] No manifest with name 35f49fg5qnj0m8n34n1s3rvk1jt3qr9es in the cache
+[2022-05-18T11:57:28.978084 569360] Running preprocessor
+[2022-05-18T11:57:29.297108 573492] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:29.297108 573492] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) base_dir = 
+[2022-05-18T11:57:29.297108 573492] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:29.297108 573492] Config: (default) compiler = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:29.297108 573492] Config: (default) compiler_type = auto
+[2022-05-18T11:57:29.297108 573492] Config: (default) compression = true
+[2022-05-18T11:57:29.297108 573492] Config: (default) compression_level = 0
+[2022-05-18T11:57:29.297108 573492] Config: (default) cpp_extension = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) debug = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) debug_dir = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) depend_mode = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) direct_mode = true
+[2022-05-18T11:57:29.297108 573492] Config: (default) disable = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) file_clone = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) hard_link = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) hash_dir = true
+[2022-05-18T11:57:29.297108 573492] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) ignore_options = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) inode_cache = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:29.297108 573492] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:29.297108 573492] Config: (default) max_files = 0
+[2022-05-18T11:57:29.297108 573492] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:29.297108 573492] Config: (default) path = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) prefix_command = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) read_only = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) read_only_direct = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) recache = false
+[2022-05-18T11:57:29.297108 573492] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:29.297108 573492] Config: (default) sloppiness = 
+[2022-05-18T11:57:29.297108 573492] Config: (default) stats = true
+[2022-05-18T11:57:29.297108 573492] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:29.297108 573492] Config: (default) umask = 
+[2022-05-18T11:57:29.297630 573492] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o static_src\CompiledGeneratorType.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledGeneratorType.c
+[2022-05-18T11:57:29.297858 573492] Hostname: unknown
+[2022-05-18T11:57:29.297915 573492] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:29.297955 573492] Compiler type: gcc
+[2022-05-18T11:57:29.299424 573492] Source file: static_src\CompiledGeneratorType.c
+[2022-05-18T11:57:29.299479 573492] Object file: static_src\CompiledGeneratorType.o
+[2022-05-18T11:57:29.299943 573492] Trying direct lookup
+[2022-05-18T11:57:29.301274 573492] No manifest with name c21aleg6tro4v84m0snnkoe8qrrk4quds in the cache
+[2022-05-18T11:57:29.309162 573492] Running preprocessor
+[2022-05-18T11:57:29.638069 570948] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:57:29.638069 570948] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) base_dir = 
+[2022-05-18T11:57:29.638069 570948] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:57:29.638069 570948] Config: (default) compiler = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) compiler_check = mtime
+[2022-05-18T11:57:29.638069 570948] Config: (default) compiler_type = auto
+[2022-05-18T11:57:29.638069 570948] Config: (default) compression = true
+[2022-05-18T11:57:29.638069 570948] Config: (default) compression_level = 0
+[2022-05-18T11:57:29.638069 570948] Config: (default) cpp_extension = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) debug = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) debug_dir = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) depend_mode = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) direct_mode = true
+[2022-05-18T11:57:29.638069 570948] Config: (default) disable = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) file_clone = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) hard_link = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) hash_dir = true
+[2022-05-18T11:57:29.638069 570948] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) ignore_options = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) inode_cache = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:57:29.638069 570948] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:57:29.638069 570948] Config: (default) max_files = 0
+[2022-05-18T11:57:29.638069 570948] Config: (default) max_size = 5.0G
+[2022-05-18T11:57:29.638069 570948] Config: (default) path = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) pch_external_checksum = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) prefix_command = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) read_only = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) read_only_direct = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) recache = false
+[2022-05-18T11:57:29.638069 570948] Config: (default) run_second_cpp = true
+[2022-05-18T11:57:29.638069 570948] Config: (default) sloppiness = 
+[2022-05-18T11:57:29.638069 570948] Config: (default) stats = true
+[2022-05-18T11:57:29.638069 570948] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:57:29.638069 570948] Config: (default) umask = 
+[2022-05-18T11:57:29.638612 570948] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o static_src\InspectPatcher.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src static_src\InspectPatcher.c
+[2022-05-18T11:57:29.638729 570948] Hostname: unknown
+[2022-05-18T11:57:29.638771 570948] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:57:29.638802 570948] Compiler type: gcc
+[2022-05-18T11:57:29.640236 570948] Source file: static_src\InspectPatcher.c
+[2022-05-18T11:57:29.640286 570948] Object file: static_src\InspectPatcher.o
+[2022-05-18T11:57:29.640732 570948] Trying direct lookup
+[2022-05-18T11:57:29.641902 570948] No manifest with name 5eadgmoo3jlfn5shlhkhlbafstdqvfa6i in the cache
+[2022-05-18T11:57:29.650721 570948] Running preprocessor
+[2022-05-18T11:57:43.307412 277372] Got result name from preprocessor
+[2022-05-18T11:57:43.308258 277372] No result with name e4e2t2r23kk81nt543n8uge6ii5e1f7na in the cache
+[2022-05-18T11:57:43.308410 277372] Running real compiler
+[2022-05-18T11:57:44.085435 570744] Got result name from preprocessor
+[2022-05-18T11:57:44.086337 570744] No result with name 2ea24jooqs3abn9kuceib4bi8c3coqr80 in the cache
+[2022-05-18T11:57:44.086434 570744] Running real compiler
+[2022-05-18T11:57:44.650992 572560] Got result name from preprocessor
+[2022-05-18T11:57:44.652478 572560] No result with name 19f544hts818nq5fbs97t4qdauvgtoi86 in the cache
+[2022-05-18T11:57:44.652591 572560] Running real compiler
+[2022-05-18T11:57:44.754265 570256] Got result name from preprocessor
+[2022-05-18T11:57:44.755096 570256] No result with name 096056o2c7a2qothfade3hii8lmjhvhq0 in the cache
+[2022-05-18T11:57:44.755202 570256] Running real compiler
+[2022-05-18T11:57:44.803231 567308] Got result name from preprocessor
+[2022-05-18T11:57:44.804137 567308] No result with name b0faecn3lhctnkno17akn6m1u1o0hbeum in the cache
+[2022-05-18T11:57:44.804259 567308] Running real compiler
+[2022-05-18T11:57:44.867786 405824] Got result name from preprocessor
+[2022-05-18T11:57:44.868626 405824] No result with name 09794esmqgol89prqqh2cs999d3qqlcgs in the cache
+[2022-05-18T11:57:44.868737 405824] Running real compiler
+[2022-05-18T11:57:44.873517 571720] Got result name from preprocessor
+[2022-05-18T11:57:44.873748 574392] Got result name from preprocessor
+[2022-05-18T11:57:44.874239 571720] No result with name 0220fh6i9ihc2d05eqnj1qetf7v602r90 in the cache
+[2022-05-18T11:57:44.874356 571720] Running real compiler
+[2022-05-18T11:57:44.874598 574392] No result with name a678skuilbnt3nb74ekkjrp082hgi7hjk in the cache
+[2022-05-18T11:57:44.874702 574392] Running real compiler
+[2022-05-18T11:57:44.964311 573492] Got result name from preprocessor
+[2022-05-18T11:57:44.965298 573492] No result with name 2272ecic8dskl1sulnfoaknmmtr2sgmj2 in the cache
+[2022-05-18T11:57:44.965506 573492] Running real compiler
+[2022-05-18T11:57:46.139457 570948] Got result name from preprocessor
+[2022-05-18T11:57:46.140276 570948] No result with name 4d6cqolq464j5mifaafprjppa35ki68gs in the cache
+[2022-05-18T11:57:46.140386 570948] Running real compiler
+[2022-05-18T11:57:46.311926 573044] Got result name from preprocessor
+[2022-05-18T11:57:46.314292 573044] No result with name ad64ae97lohiv1u270tg4n87oahnoevr6 in the cache
+[2022-05-18T11:57:46.314582 573044] Running real compiler
+[2022-05-18T11:57:55.238376 569360] Got result name from preprocessor
+[2022-05-18T11:57:55.239211 569360] No result with name 9abch6tn1vml3nrtt4hu7onksf6e90lti in the cache
+[2022-05-18T11:57:55.239329 569360] Running real compiler
+[2022-05-18T11:58:03.390321 277372] Using default compression level 1
+[2022-05-18T11:58:03.390763 277372] Storing result __loader.o
+[2022-05-18T11:58:03.391238 277372] Storing embedded file #0 .o (30339 bytes) from __loader.o
+[2022-05-18T11:58:03.401159 277372] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/4/e2t2r23kk81nt543n8uge6ii5e1f7naR
+[2022-05-18T11:58:03.404555 277372] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/f/7cktng2d238uc50cbk90c2bfnjp02hiM
+[2022-05-18T11:58:03.458514 277372] Using default compression level 1
+[2022-05-18T11:58:03.467354 277372] Result: cache miss
+[2022-05-18T11:58:03.468665 277372] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2022-05-18T11:58:03.478146 277372] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2022-05-18T11:58:03.479252 277372] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/stats.lock
+[2022-05-18T11:58:03.486385 277372] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/stats.lock
+[2022-05-18T11:58:03.488786 277372] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.aDNaNH
+[2022-05-18T11:58:03.489979 277372] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.mMNCAi
+[2022-05-18T11:58:03.491230 277372] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.7G2Cdm
+[2022-05-18T11:58:03.492916 277372] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.3fBL4u.i
+[2022-05-18T11:58:03.495111 277372] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.3fBL4u
+[2022-05-18T11:58:05.038004 570744] Using default compression level 1
+[2022-05-18T11:58:05.038282 570744] Storing result module.PyQt5-preLoad.o
+[2022-05-18T11:58:05.038881 570744] Storing embedded file #0 .o (51574 bytes) from module.PyQt5-preLoad.o
+[2022-05-18T11:58:05.048414 570744] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/e/a24jooqs3abn9kuceib4bi8c3coqr80R
+[2022-05-18T11:58:05.051573 570744] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/c/7adnt0d3dkde2n1ostoac744o8667icM
+[2022-05-18T11:58:05.107263 572560] Using default compression level 1
+[2022-05-18T11:58:05.107558 572560] Storing result __constants.o
+[2022-05-18T11:58:05.108081 572560] Storing embedded file #0 .o (14243 bytes) from __constants.o
+[2022-05-18T11:58:05.111688 567308] Using default compression level 1
+[2022-05-18T11:58:05.111996 567308] Storing result module.PyQt5.QtCore-postLoad.o
+[2022-05-18T11:58:05.112593 567308] Storing embedded file #0 .o (56184 bytes) from module.PyQt5.QtCore-postLoad.o
+[2022-05-18T11:58:05.114503 570256] Using default compression level 1
+[2022-05-18T11:58:05.114836 570256] Storing result module.__main__.o
+[2022-05-18T11:58:05.115464 570256] Storing embedded file #0 .o (44655 bytes) from module.__main__.o
+[2022-05-18T11:58:05.122724 405824] Using default compression level 1
+[2022-05-18T11:58:05.123080 405824] Storing result __helpers.o
+[2022-05-18T11:58:05.123732 405824] Storing embedded file #0 .o (2647 bytes) from __helpers.o
+[2022-05-18T11:58:05.124523 572560] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/9/f544hts818nq5fbs97t4qdauvgtoi86R
+[2022-05-18T11:58:05.127117 567308] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/0/faecn3lhctnkno17akn6m1u1o0hbeumR
+[2022-05-18T11:58:05.130059 572560] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/1/34hdb09h3pkg4u06ssjg1qh7uptok5gM
+[2022-05-18T11:58:05.131794 567308] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/5/1500p2bv2hfvd2okk6njnsj33tmr54iM
+[2022-05-18T11:58:05.131856 570256] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/9/6056o2c7a2qothfade3hii8lmjhvhq0R
+[2022-05-18T11:58:05.136101 570256] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/b/288eq5r9aukviplr013jglcoj2pf45oM
+[2022-05-18T11:58:05.139123 405824] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/9/794esmqgol89prqqh2cs999d3qqlcgsR
+[2022-05-18T11:58:05.141181 405824] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/6/7bliqihstj3dsi3dc1stp1ivrpqo8h8M
+[2022-05-18T11:58:05.183289 571720] Using default compression level 1
+[2022-05-18T11:58:05.183624 571720] Storing result static_src\CompiledCellType.o
+[2022-05-18T11:58:05.184181 571720] Storing embedded file #0 .o (36331 bytes) from static_src\CompiledCellType.o
+[2022-05-18T11:58:05.197859 571720] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/2/20fh6i9ihc2d05eqnj1qetf7v602r90R
+[2022-05-18T11:58:05.199862 571720] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/f/1cf2akeo3uorpk2q23d0n5jpi1mv7a0M
+[2022-05-18T11:58:05.213874 574392] Using default compression level 1
+[2022-05-18T11:58:05.214260 574392] Storing result module.PyQt5.o
+[2022-05-18T11:58:05.214991 574392] Storing embedded file #0 .o (117211 bytes) from module.PyQt5.o
+[2022-05-18T11:58:05.235777 574392] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/6/78skuilbnt3nb74ekkjrp082hgi7hjkR
+[2022-05-18T11:58:05.241177 574392] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/e/e6i9jog3d7su091l2d66rhvt6ar5c7uM
+[2022-05-18T11:58:05.275019 570948] Using default compression level 1
+[2022-05-18T11:58:05.275380 570948] Storing result static_src\InspectPatcher.o
+[2022-05-18T11:58:05.275989 570948] Storing embedded file #0 .o (34801 bytes) from static_src\InspectPatcher.o
+[2022-05-18T11:58:05.290317 570948] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/d/6cqolq464j5mifaafprjppa35ki68gsR
+[2022-05-18T11:58:05.295045 570948] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/e/adgmoo3jlfn5shlhkhlbafstdqvfa6iM
+[2022-05-18T11:58:05.491874 405824] Using default compression level 1
+[2022-05-18T11:58:05.493716 570744] Using default compression level 1
+[2022-05-18T11:58:05.509906 570744] Result: cache miss
+[2022-05-18T11:58:05.511383 405824] Result: cache miss
+[2022-05-18T11:58:05.511758 570744] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2022-05-18T11:58:05.513467 405824] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:05.513932 572560] Using default compression level 1
+[2022-05-18T11:58:05.520017 567308] Using default compression level 1
+[2022-05-18T11:58:05.526676 570256] Using default compression level 1
+[2022-05-18T11:58:05.528112 570744] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2022-05-18T11:58:05.529374 405824] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:05.530187 570744] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2022-05-18T11:58:05.530802 572560] Result: cache miss
+[2022-05-18T11:58:05.531346 405824] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:05.533101 572560] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2022-05-18T11:58:05.542734 567308] Result: cache miss
+[2022-05-18T11:58:05.544510 567308] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2022-05-18T11:58:05.544633 570256] Result: cache miss
+[2022-05-18T11:58:05.547023 570744] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2022-05-18T11:58:05.548130 570256] lockfile_acquire: CreateFile C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock: 另一个程序正在使用此文件，进程无法访问。
+ (32)
+[2022-05-18T11:58:05.548223 570256] lockfile_acquire: failed to acquire C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock; sleeping 1000 microseconds
+[2022-05-18T11:58:05.548410 405824] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:05.549436 572560] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2022-05-18T11:58:05.549822 570744] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.vSQNUK
+[2022-05-18T11:58:05.550805 405824] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.pRi4VV
+[2022-05-18T11:58:05.551409 572560] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/stats.lock
+[2022-05-18T11:58:05.552375 570744] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.n6d1TJ
+[2022-05-18T11:58:05.553082 405824] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.o6L3sK
+[2022-05-18T11:58:05.554653 570744] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.nx2DXr
+[2022-05-18T11:58:05.555419 405824] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.YoKR4W
+[2022-05-18T11:58:05.556901 570744] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.EX0VOy.i
+[2022-05-18T11:58:05.559070 405824] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.vPgwFi.i
+[2022-05-18T11:58:05.559155 570256] lockfile_acquire: CreateFile C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock: 另一个程序正在使用此文件，进程无法访问。
+ (32)
+[2022-05-18T11:58:05.559258 570256] lockfile_acquire: failed to acquire C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock; sleeping 2000 microseconds
+[2022-05-18T11:58:05.561006 574392] Using default compression level 1
+[2022-05-18T11:58:05.561205 570744] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.EX0VOy
+[2022-05-18T11:58:05.563278 567308] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2022-05-18T11:58:05.564228 405824] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.vPgwFi
+[2022-05-18T11:58:05.567046 572560] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/stats.lock
+[2022-05-18T11:58:05.567532 567308] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2022-05-18T11:58:05.569641 572560] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.TjLTnS
+[2022-05-18T11:58:05.571857 572560] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.3eiEdb
+[2022-05-18T11:58:05.574594 570256] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2022-05-18T11:58:05.575514 572560] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.uCwga3
+[2022-05-18T11:58:05.577884 572560] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.X0bUKF.i
+[2022-05-18T11:58:05.578649 571720] Using default compression level 1
+[2022-05-18T11:58:05.579410 574392] Result: cache miss
+[2022-05-18T11:58:05.581199 574392] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2022-05-18T11:58:05.581263 572560] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.X0bUKF
+[2022-05-18T11:58:05.587101 570948] Using default compression level 1
+[2022-05-18T11:58:05.589613 567308] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2022-05-18T11:58:05.591148 570256] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2022-05-18T11:58:05.592202 567308] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.J56aGw
+[2022-05-18T11:58:05.593335 570256] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:05.594301 567308] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.Ni1IAz
+[2022-05-18T11:58:05.595775 571720] Result: cache miss
+[2022-05-18T11:58:05.596788 567308] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.JJoILF
+[2022-05-18T11:58:05.598212 574392] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2022-05-18T11:58:05.599486 571720] lockfile_acquire: CreateFile C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock: 另一个程序正在使用此文件，进程无法访问。
+ (32)
+[2022-05-18T11:58:05.599576 571720] lockfile_acquire: failed to acquire C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock; sleeping 1000 microseconds
+[2022-05-18T11:58:05.599851 567308] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.jTi7NJ.i
+[2022-05-18T11:58:05.601334 574392] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2022-05-18T11:58:05.602763 570948] Result: cache miss
+[2022-05-18T11:58:05.604855 570948] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/stats.lock
+[2022-05-18T11:58:05.606008 571720] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2022-05-18T11:58:05.609887 570256] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:05.612021 567308] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.jTi7NJ
+[2022-05-18T11:58:05.612403 570256] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.vT16RJ
+[2022-05-18T11:58:05.614686 570256] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.IgSx4A
+[2022-05-18T11:58:05.616965 570256] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.MYNx4h
+[2022-05-18T11:58:05.619300 570256] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.nzZbwE.i
+[2022-05-18T11:58:05.619865 574392] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2022-05-18T11:58:05.622757 570256] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.nzZbwE
+[2022-05-18T11:58:05.623656 574392] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.AzlvC3
+[2022-05-18T11:58:05.628117 574392] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.Uq5j7E
+[2022-05-18T11:58:05.629093 571720] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2022-05-18T11:58:05.629597 570948] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/stats.lock
+[2022-05-18T11:58:05.630369 574392] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.nsG6x9
+[2022-05-18T11:58:05.631064 571720] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:05.632164 570948] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/stats.lock
+[2022-05-18T11:58:05.632636 574392] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.f11NK7.i
+[2022-05-18T11:58:05.636350 574392] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.f11NK7
+[2022-05-18T11:58:05.647367 570948] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/stats.lock
+[2022-05-18T11:58:05.649794 570948] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.FrQ4xk
+[2022-05-18T11:58:05.652429 571720] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:05.652610 570948] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.kF4d1E
+[2022-05-18T11:58:05.655137 570948] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.58henw
+[2022-05-18T11:58:05.655253 571720] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.cJOTnN
+[2022-05-18T11:58:05.657478 571720] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.rCsych
+[2022-05-18T11:58:05.657668 570948] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.NpxJCK.i
+[2022-05-18T11:58:05.660221 571720] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.6dNg90
+[2022-05-18T11:58:05.661901 570948] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.NpxJCK
+[2022-05-18T11:58:05.662448 571720] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.9B2FoC.i
+[2022-05-18T11:58:05.667151 571720] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.9B2FoC
+[2022-05-18T11:58:06.007294 573492] Using default compression level 1
+[2022-05-18T11:58:06.007631 573492] Storing result static_src\CompiledGeneratorType.o
+[2022-05-18T11:58:06.008260 573492] Storing embedded file #0 .o (367953 bytes) from static_src\CompiledGeneratorType.o
+[2022-05-18T11:58:06.035296 573492] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/2/72ecic8dskl1sulnfoaknmmtr2sgmj2R
+[2022-05-18T11:58:06.036570 573044] Using default compression level 1
+[2022-05-18T11:58:06.036944 573044] Storing result static_src\MainProgram.o
+[2022-05-18T11:58:06.037585 573044] Storing embedded file #0 .o (27669 bytes) from static_src\MainProgram.o
+[2022-05-18T11:58:06.038357 573492] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/2/1aleg6tro4v84m0snnkoe8qrrk4qudsM
+[2022-05-18T11:58:06.051759 573044] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/d/64ae97lohiv1u270tg4n87oahnoevr6R
+[2022-05-18T11:58:06.053884 573044] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/a/e4s32s0onu7u752ojjh9ehq0otc2sg0M
+[2022-05-18T11:58:06.253706 573492] Using default compression level 1
+[2022-05-18T11:58:06.270139 573492] Result: cache miss
+[2022-05-18T11:58:06.272541 573492] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2022-05-18T11:58:06.284288 573044] Using default compression level 1
+[2022-05-18T11:58:06.285001 573492] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2022-05-18T11:58:06.287080 573492] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2022-05-18T11:58:06.299510 573044] Result: cache miss
+[2022-05-18T11:58:06.300265 573492] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2022-05-18T11:58:06.301471 573044] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:06.302665 573492] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.B2YuFT
+[2022-05-18T11:58:06.304499 573492] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.VeY7K4
+[2022-05-18T11:58:06.306316 573492] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.OPdkXS
+[2022-05-18T11:58:06.307987 573492] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.B6ZdYP.i
+[2022-05-18T11:58:06.311160 573492] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.B6ZdYP
+[2022-05-18T11:58:06.314016 573044] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2022-05-18T11:58:06.316070 573044] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2022-05-18T11:58:06.328729 573044] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2022-05-18T11:58:06.330582 573044] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.5KzmSQ
+[2022-05-18T11:58:06.332063 573044] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.ltJ9OH
+[2022-05-18T11:58:06.333544 573044] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.5DMjWE
+[2022-05-18T11:58:06.335101 573044] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.0p9NYL.i
+[2022-05-18T11:58:06.337519 573044] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.0p9NYL
+[2022-05-18T11:58:06.762151 570512] === CCACHE 4.3 STARTED =========================================
+[2022-05-18T11:58:06.762151 570512] Config: (default) absolute_paths_in_stderr = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) base_dir = 
+[2022-05-18T11:58:06.762151 570512] Config: (environment) cache_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-05-18T11:58:06.762151 570512] Config: (default) compiler = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) compiler_check = mtime
+[2022-05-18T11:58:06.762151 570512] Config: (default) compiler_type = auto
+[2022-05-18T11:58:06.762151 570512] Config: (default) compression = true
+[2022-05-18T11:58:06.762151 570512] Config: (default) compression_level = 0
+[2022-05-18T11:58:06.762151 570512] Config: (default) cpp_extension = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) debug = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) debug_dir = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) depend_mode = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) direct_mode = true
+[2022-05-18T11:58:06.762151 570512] Config: (default) disable = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) extra_files_to_hash = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) file_clone = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) hard_link = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) hash_dir = true
+[2022-05-18T11:58:06.762151 570512] Config: (default) ignore_headers_in_manifest = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) ignore_options = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) inode_cache = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) keep_comments_cpp = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) limit_multiple = 0.8
+[2022-05-18T11:58:06.762151 570512] Config: (environment) log_file = E:\BaiduNetdiskWorkspace\Pycharm_program\exercise\out\start.build\ccache-572996.txt
+[2022-05-18T11:58:06.762151 570512] Config: (default) max_files = 0
+[2022-05-18T11:58:06.762151 570512] Config: (default) max_size = 5.0G
+[2022-05-18T11:58:06.762151 570512] Config: (default) path = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) pch_external_checksum = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) prefix_command = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) prefix_command_cpp = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) read_only = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) read_only_direct = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) recache = false
+[2022-05-18T11:58:06.762151 570512] Config: (default) run_second_cpp = true
+[2022-05-18T11:58:06.762151 570512] Config: (default) sloppiness = 
+[2022-05-18T11:58:06.762151 570512] Config: (default) stats = true
+[2022-05-18T11:58:06.762151 570512] Config: (default) temporary_dir = C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-05-18T11:58:06.762151 570512] Config: (default) umask = 
+[2022-05-18T11:58:06.763038 570512] Command line: C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\ccache.exe C:\Users\sc\AppData\Local\Nuitka\Nuitka\gcc\x86_64\11.2.0-12.0.1-9.0.0-r1\mingw64\bin\gcc.exe -o static_src\MetaPathBasedLoader.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_STANDALONE -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=153 -D_NUITKA_EXE -IC:\Users\sc\AppData\Local\Programs\Python\Python310\include -I. -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\include -IC:\Users\sc\AppData\Local\Programs\Python\PYTHON~1\lib\SITE-P~1\nuitka\build\static_src static_src\MetaPathBasedLoader.c
+[2022-05-18T11:58:06.763152 570512] Hostname: unknown
+[2022-05-18T11:58:06.763227 570512] Working directory: E:/BaiduNetdiskWorkspace/Pycharm_program/exercise/out/start.build
+[2022-05-18T11:58:06.763305 570512] Compiler type: gcc
+[2022-05-18T11:58:06.765880 570512] Source file: static_src\MetaPathBasedLoader.c
+[2022-05-18T11:58:06.765968 570512] Object file: static_src\MetaPathBasedLoader.o
+[2022-05-18T11:58:06.766657 570512] Trying direct lookup
+[2022-05-18T11:58:06.768758 570512] No manifest with name beb3pu0pbhd8h9f0kje83ug9holsvnm0m in the cache
+[2022-05-18T11:58:06.783188 570512] Running preprocessor
+[2022-05-18T11:58:10.258263 570512] Got result name from preprocessor
+[2022-05-18T11:58:10.258676 570512] No result with name 911bfmh2kmlskq8fkiombl5amn7qioes6 in the cache
+[2022-05-18T11:58:10.258726 570512] Running real compiler
+[2022-05-18T11:58:13.665156 570512] Using default compression level 1
+[2022-05-18T11:58:13.665451 570512] Storing result static_src\MetaPathBasedLoader.o
+[2022-05-18T11:58:13.665944 570512] Storing embedded file #0 .o (107509 bytes) from static_src\MetaPathBasedLoader.o
+[2022-05-18T11:58:13.674747 570512] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/1/1bfmh2kmlskq8fkiombl5amn7qioes6R
+[2022-05-18T11:58:13.677232 570512] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/e/b3pu0pbhd8h9f0kje83ug9holsvnm0mM
+[2022-05-18T11:58:13.788395 570512] Using default compression level 1
+[2022-05-18T11:58:13.795896 570512] Result: cache miss
+[2022-05-18T11:58:13.796837 570512] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2022-05-18T11:58:13.805401 570512] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2022-05-18T11:58:13.807012 570512] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2022-05-18T11:58:13.817047 570512] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2022-05-18T11:58:13.818879 570512] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.yPwqoo
+[2022-05-18T11:58:13.820554 570512] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.hQ21T9
+[2022-05-18T11:58:13.822261 570512] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.xwC36b
+[2022-05-18T11:58:13.824007 570512] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.pdAOT4.i
+[2022-05-18T11:58:13.826652 570512] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.pdAOT4
+[2022-05-18T11:58:16.517593 569360] Using default compression level 1
+[2022-05-18T11:58:16.517834 569360] Storing result static_src\CompiledFunctionType.o
+[2022-05-18T11:58:16.518184 569360] Storing embedded file #0 .o (3259022 bytes) from static_src\CompiledFunctionType.o
+[2022-05-18T11:58:16.546045 569360] Stored in cache: C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/a/bch6tn1vml3nrtt4hu7onksf6e90ltiR
+[2022-05-18T11:58:16.547243 569360] Adding result name to C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/5/f49fg5qnj0m8n34n1s3rvk1jt3qr9esM
+[2022-05-18T11:58:16.648715 569360] Using default compression level 1
+[2022-05-18T11:58:16.655499 569360] Result: cache miss
+[2022-05-18T11:58:16.656317 569360] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2022-05-18T11:58:16.662075 569360] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2022-05-18T11:58:16.662910 569360] Acquired lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2022-05-18T11:58:16.669146 569360] Releasing lock C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2022-05-18T11:58:16.670207 569360] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.0cQwDh
+[2022-05-18T11:58:16.671120 569360] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.eXxvfc
+[2022-05-18T11:58:16.672028 569360] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.ojTuE2
+[2022-05-18T11:58:16.672943 569360] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.2OhpS3.i
+[2022-05-18T11:58:16.675694 569360] Unlink C:\Users\sc\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.2OhpS3
