@@ -1,6 +1,5 @@
 from class_staff_setting import *
 from classgroupsetting import *
-from group_waiting_arrow import *
 from groupwaitinginforamtion import *
 from mainform import *
 
@@ -10,17 +9,8 @@ class QMyMainWindow(QMainWindow):
         super(QMainWindow, self).__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.dir = {1: None, 2: None, 3: None, 4: None}
-        self.arrow_identification = {1: 'left', 2: 'up', 3: 'right', 4: 'down'}
         # 一个护士站中最大的科室数量，如果超出此数量则部分科室不会在科室列表界面显示
-        self.total_page = 0
-        self.max_group_number_every_page = 4
-        self.row_col = {0:(0,0),1:(1,1),2:(1,2),4: (2, 2), 6: (2, 3), 9: (3, 3), 16: (4, 4)}
-        self.current_page_No = 0
-        self.page_up = False
-        self.page_down = False
-        self.show_up_icon = False
-        self.show_down_icon = False
+        self.max_group_number_every_page = 6
 
         # self.pix = QBitmap('.'+ os.sep + 'images' + os.sep + 'mask.png')
         # self.pix.scaledToWidth(self.width())
@@ -43,72 +33,6 @@ class QMyMainWindow(QMainWindow):
         self.set_tableView_login_message()
         # 显示右侧各科室病人等候情况窗
         self.set_group_waiting_inforamtion()
-
-        self.ui.frame_group_queue_information.installEventFilter(self)
-
-    def eventFilter(self, object, event):
-        if object is self.ui.frame_group_queue_information:
-            if event.type() == QEvent.ToolTip:
-                # print('(frame鼠标的当前位置为：',event.pos())
-                # print('frame_group_queue_information.geometry',self.ui.frame_group_queue_information.geometry())
-                mouse_position = self.get_current_position(event.pos())
-        return QWidget.eventFilter(self, object, event)
-
-    def get_current_position(self, point):
-        mouse_x = point.x()
-        mouse_y = point.y()
-        x = self.ui.frame_group_queue_information.geometry().x()
-        y = self.ui.frame_group_queue_information.geometry().y()
-        width = self.ui.frame_group_queue_information.width()
-        height = self.ui.frame_group_queue_information.height()
-        # 初始没有方向值
-        direction = 0
-        # 左
-
-        if mouse_x < 20 and abs(mouse_y - height / 2) < 10:
-            print('左')
-            direction = 1
-            self.deal_with_direction(direction)
-            print(self.group_waiting_arrow.objectName())
-            return 1
-        # 上
-        elif mouse_y < 30 and abs(mouse_x - width / 2) < 20:
-            print('上')
-            direction = 2
-            self.deal_with_direction(direction)
-            print(self.group_waiting_arrow.objectName())
-            return 2
-        # 右
-        elif (width - mouse_x) < 20 and abs(mouse_y - height / 2) < 10:
-            print('右')
-            direction = 3
-            self.deal_with_direction(direction)
-            print(self.group_waiting_arrow.objectName())
-            return 3
-        # 下
-        elif (height - mouse_y) < 20 and abs(mouse_x - width / 2) < 10:
-            print('下')
-            direction = 4
-            self.deal_with_direction(direction)
-            print(self.group_waiting_arrow.objectName())
-            return 4
-        else:
-            direction = 0
-            self.deal_with_direction(direction)
-            return 0
-
-    def deal_with_direction(self, direction):
-        if direction != 0:
-            if self.dir[direction] is None:
-                self.group_waiting_arrow = QWaitingArrow(self.arrow_identification[direction],self.current_page_No,self.show_up_icon,self.show_down_icon,self.ui.frame_group_queue_information)
-        for n in range(1, 5):
-            if n == direction:
-                self.dir[direction] = self.group_waiting_arrow
-                self.group_waiting_arrow.show()
-            else:
-                if self.dir[n] is not None:
-                    self.dir[n].close()
-                self.dir[n] = None
 
     @pyqtSlot()
     def on_action_staff_manage_triggered(self):
@@ -140,25 +64,11 @@ class QMyMainWindow(QMainWindow):
                     FROM t_DHXX 
                     WHERE JZBZ =1 GROUP BY KSID) as a,
                     (SELECT KSID,KSMC FROM t_KS) as b 
-                    WHERE a.KSID = b.KSID 
+                    WHERE a.KSID = b.KSID
         """
         cursor.execute(querystr)
         rows = cursor.fetchall()
-        self.total_page = len(rows) // self.max_group_number_every_page
-        if len(rows) % self.max_group_number_every_page != 0:
-            self.total_page += 1
-        print('总页数：',self.total_page)
-        print('当前页：',self.current_page_No)
-        self.show_icon()
-        if len(rows) > self.max_group_number_every_page:
-            querystr += " ORDER BY a.ksid offset " + str(
-                self.current_page_No * self.max_group_number_every_page) + " rows fetch next " + str(
-                self.max_group_number_every_page) + " rows only"
-            cursor.execute(querystr)
-            rows = cursor.fetchall()
-
         cursor.close()
-        # self.total_page = len(rows) + (0 if )
         for i in range(len(rows)):
             for j in range(len(rows[0])):
                 print(rows[i][j])
@@ -178,40 +88,67 @@ class QMyMainWindow(QMainWindow):
         grid_group_waiting_information = QGridLayout(self.ui.frame_group_queue_information)
         # 如果科室数量小于设定的显示科室数量最大值，按科室数量显示
         # 如果科室数量大于设定的显示科室数量最大值，按设定的显示科室数量最大值显示
-        display_group_number = len(rows)
-        row_number = 0
-        col_number = 0
-        keys = sorted(self.row_col.keys())
-        for key in keys:
-            if display_group_number <= key:
-                row_number = self.row_col[key][0]
-                col_number = self.row_col[key][1]
-                break
-
+        display_group_number = len(group_waiting_information_lists) if len(
+            group_waiting_information_lists) < self.max_group_number_every_page else self.max_group_number_every_page
         for i in range(display_group_number):
-            row_no = i // col_number
-            # if i - i % col_number > 0:
-            #     row_no += 1
-            col_no = i % col_number
-
+            row_no = i // (display_group_number // 2 + display_group_number % 2)
+            col_no = i % (display_group_number // 2 + display_group_number % 2)
             grid_group_waiting_information.addWidget(group_waiting_information_lists[i], row_no, col_no)
             print(group_waiting_information_lists[i].objectName())
-    def show_icon(self):
-        if (self.total_page > 1) and (self.current_page_No > 0):
-            self.show_up_icon = True
-        if (self.total_page > self.current_page_No):
-            self.show_down_icon = True
-        if self.current_page_No == 0:
-            self.show_up_icon = False
-        if self.current_page_No == self.total_page:
-            self.show_down_icon = False
+            # group_id = group_waiting_information_lists[i].objectName().split('_')[-1]
+            # group_name = group_waiting_information_lists[i].objectName().split('_')[-2]
+            #
+            # print(group_id)
+            #
+            # cursor = self.conn.cursor()
+            # # querystr = "SELECT kssxid,brxm,ghhm,b.ztmc,c.yhmc FROM (SELECT kssxid,brxm,ghhm,ztbz,yhid FROM t_DHXX WHERE ksid = '" + group_id + "'and jzbz = 1) a,t_jzzt b,t_yh c WHERE a.ztbz = b.ztbz and a.yhid=c.yhid order by kssxid"
+            # querystr = """
+            #             SELECT kssxid, brxm, ghhm, c.ztmc,  CASE WHEN  y.yhmc  IS NOT NULL THEN y.yhmc  else '' END yhmc  FROM(
+            #                 (SELECT kssxid, brxm, ghhm, b.ztmc, yhid FROM
+            #                     (SELECT kssxid, brxm, ghhm, ztbz, yhid FROM t_DHXX WHERE ksid = '""" + group_id + """' and jzbz = 1) a, t_jzzt b WHERE a.ztbz = b.ztbz ) AS c
+            #                     LEFT JOIN t_yh y ON c.yhid = y.yhid)
+            #             ORDER BY kssxid
+            #         """
+            #
+            # cursor.execute(querystr)
+            # group_waiting_list = cursor.fetchall()
+            # cursor.close()
+            #
+            # group_waiting_information_lists[i].ui.label_group.setText(group_name)
+            # # group_waiting_information_lists[i].ui.tableWidget_group_waiting_information.setModel(group_waiting_model)
+            #
+            # group_waiting_information_lists[i].ui.tableWidget_group_waiting_information.setRowCount(len(group_waiting_list))
+            # group_waiting_information_lists[i].ui.tableWidget_group_waiting_information.setColumnCount(len(group_waiting_list[0]))
+            # horizontalHeadLabels = ['序号','姓名','号码','类型','医生']
+            # group_waiting_information_lists[i].ui.tableWidget_group_waiting_information.setHorizontalHeaderLabels(horizontalHeadLabels)
+            #
+            #
+            # for ii in range(len(group_waiting_list)):
+            #     for jj in range(len(group_waiting_list[0])):
+            #         item = QTableWidgetItem(str(group_waiting_list[ii][jj]))
+            #         group_waiting_information_lists[i].ui.tableWidget_group_waiting_information.setItem(ii,jj,item)
+            #
+            # cursor = self.conn.cursor()
+            # querystr = "SELECT count(*) AS waiting_number FROM t_DHXX WHERE ksid = '" + group_id + "'and jzbz = 1 group by ksid"
+            # cursor.execute(querystr)
+            # waiting_number = cursor.fetchall()[0][0]
+            #
+            # querystr = "SELECT count(*) as waiting_number FROM t_DHXX WHERE ksid = '" + group_id + "' group by ksid"
+            # cursor.execute(querystr)
+            # patient_number = cursor.fetchall()[0][0]
+            # cursor.close()
+            # group_waiting_information_lists[i].ui.label_queue_information.setText(str(waiting_number) + '人/' + str(patient_number) + '人')
+            #
+            # group_waiting_information_lists[i].ui.tableWidget_group_waiting_information.customContextMenuRequested.connect(self.group_waiting_information_generate_menu)
+
+    # def group_waiting_information_generate_menu(self,pos):
+    #     print(pos)
 
     def login_message_generate_menu(self, pos):
         print(pos)
         currentRow = self.ui.tableView_login_message.currentIndex().row()
         if currentRow == -1:
             QMessageBox.warning(self, '提示', '没有数据')
-            return
 
         # ii = self.ui.tableView_login_message.selectionModel().selection().indexes()
         # i = ii[0].row()
@@ -240,19 +177,17 @@ class QMyMainWindow(QMainWindow):
     def set_tableView_login_message(self):
         cursor = self.conn.cursor()
         querystr = """
-            SELECT zdid,c.yhid,yhmc,fjh,waiting_num,d.finished_num from 
-                (SELECT zdid,a.yhid,yhmc,fjh,waiting_num FROM 
-                        ((SELECT ZDID,t_hjzd.YHID as YHID,YHMC,FJH FROM  t_hjzd
-                                        left outer join t_yh on t_hjzd.yhid=t_yh.yhid and t_hjzd.hszh=t_yh.hszh
-                                        where t_hjzd.yhid<>'' and t_hjzd.yhid is not null
-                                        and t_hjzd.hszh=98  and t_hjzd.zt<>'暂停' ) as a LEFT JOIN  
-                                (SELECT count(*) as waiting_num,t_dhxx.yhid as YHID  FROM t_DHXX
-                                            WHERE t_DHXX.JZBZ = 1   and t_dhxx.hszh=98 and t_dhxx.yhid <>'' GROUP BY t_dhxx.yhid ) AS b
-                                            ON a.yhid = b.yhid)) AS c LEFT JOIN
-                                (SELECT count(*) as finished_num,t_dhxx.yhid as yhid     FROM t_DHXX
-                                WHERE t_DHXX.JZBZ = 0  and t_dhxx.ztbz<>3  and t_dhxx.hszh=98 
-                                GROUP BY t_dhxx.yhid) AS d
-                                        ON c.yhid = d.yhid
+            SELECT a.ZDID,a.YHID,a.YHMC,a.FJH,b.waiting_num,c.finished_num FROM
+                (SELECT ZDID,t_hjzd.YHID as YHID,YHMC,FJH FROM  t_hjzd
+                    left outer join t_yh on t_hjzd.yhid=t_yh.yhid and t_hjzd.hszh=t_yh.hszh
+                    where t_hjzd.yhid<>'' and t_hjzd.yhid is not null
+                    and t_hjzd.hszh=98  and t_hjzd.zt<>'暂停') AS a,
+                (SELECT count(*) as waiting_num,t_dhxx.yhid as YHID  FROM t_DHXX
+                    WHERE t_DHXX.JZBZ = 1   and t_dhxx.hszh=98 GROUP BY t_dhxx.yhid ) AS b,
+                (SELECT count(*) as finished_num,t_dhxx.yhid as yhid     FROM t_DHXX
+                    WHERE t_DHXX.JZBZ = 0  and t_dhxx.ztbz<>3  and t_dhxx.hszh=98
+                    GROUP BY t_dhxx.yhid) as c
+            where a.YHID = b.YHID and a.yhid = c.yhid
         """
         cursor.execute(querystr)
         rows = cursor.fetchall()
@@ -274,10 +209,7 @@ class QMyMainWindow(QMainWindow):
 
         for i in range(len(rows)):
             for j in range(len(rows[0])):
-                if str(rows[i][j]) == 'None':
-                    item = QStandardItem('')
-                else:
-                    item = QStandardItem(str(rows[i][j]))
+                item = QStandardItem(str(rows[i][j]))
                 self.model.setItem(i, j, item)
 
         # self.qryModel = QSqlQueryModel(self)

@@ -100,8 +100,7 @@ class QGroupWaitingInformation(QWidget):
             "QTableView{background-color: rgb(250, 250, 250);alternate-background-color: rgb(234, 230, 234);}")  # 设置表格颜色
 
         self.ui.tableWidget_group_waiting_information.setStyleSheet(
-            "QTableWidget{border:1px solid #EFEAEF;font-size:12px;}"
-            # "QTableWidget{border:1px solid #EFEAEF;font-size:12px;font-family:'Microsoft YaHei'}"
+            "QTableWidget{border:1px solid #EFEAEF;font-size:12px;font-family:'Microsoft YaHei'}"
         )
         # 设置QTabWidget边框
         self.ui.tabWidget.setStyleSheet("QTabWidget::pane{top:20px;border: none;}")
