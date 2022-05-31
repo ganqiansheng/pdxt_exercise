@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>295</width>
+    <height>678</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>呼叫终端</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>医生姓名：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_username">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>科室名称：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_groupname">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>正在呼叫：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_calling_information">
+          <property name="text">
+           <string>正在呼叫：</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>收到的消息：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEdit_recieved_information"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>发出的消息：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEdit_sent_information"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_call_next">
+          <property name="text">
+           <string>顺呼</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_recall">
+          <property name="text">
+           <string>复呼</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="pushButton_ignore">
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_call">
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

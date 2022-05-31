@@ -39,7 +39,7 @@ class QGroupWaitingInformation(QWidget):
             return
         cursor = self.conn.cursor()
         querystr = """
-                    SELECT kssxid, brxm, ghhm, c.ztmc,  CASE WHEN  y.yhmc  IS NOT NULL THEN y.yhmc  else '' END yhmc  FROM(
+                    SELECT DISTINCT kssxid, brxm, ghhm, c.ztmc,  CASE WHEN  y.yhmc  IS NOT NULL THEN y.yhmc  else '' END yhmc  FROM(
                         (SELECT kssxid, brxm, ghhm, b.ztmc, yhid FROM 
                             (SELECT kssxid, brxm, ghhm, ztbz, yhid FROM t_DHXX WHERE ksid = '""" + group_id + """' and jzbz = 1) a, t_jzzt b WHERE a.ztbz = b.ztbz ) AS c
                             LEFT JOIN t_yh y ON c.yhid = y.yhid) 

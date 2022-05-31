@@ -16,3 +16,4 @@ def server_connect():
     else:
         # QMessageBox.critical(self, '提示', '数据库打开成功')
         return conn,True
+

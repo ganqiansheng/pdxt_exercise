@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>914</width>
+    <width>1160</width>
     <height>607</height>
    </rect>
   </property>
@@ -35,7 +35,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>914</width>
+     <width>1160</width>
      <height>24</height>
     </rect>
    </property>
@@ -107,9 +107,12 @@
    <addaction name="action_priority_manage"/>
    <addaction name="action_text_manage"/>
    <addaction name="separator"/>
+   <addaction name="action_report"/>
+   <addaction name="separator"/>
    <addaction name="action_clear_screen"/>
    <addaction name="separator"/>
    <addaction name="action_help"/>
+   <addaction name="separator"/>
   </widget>
   <widget class="QDockWidget" name="dockWidget">
    <attribute name="dockWidgetArea">
@@ -303,6 +306,15 @@
   <action name="action_help">
    <property name="text">
     <string>帮助</string>
+   </property>
+  </action>
+  <action name="action_report">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/icon/file.ico</normaloff>:/icon/icon/file.ico</iconset>
+   </property>
+   <property name="text">
+    <string>报表</string>
    </property>
   </action>
  </widget>

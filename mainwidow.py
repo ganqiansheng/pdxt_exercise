@@ -1,9 +1,14 @@
+import matplotlib
+
+from call_terminal.call_command import *
 from class_staff_setting import *
 from classgroupsetting import *
 from group_waiting_arrow import *
 from groupwaitinginforamtion import *
 from mainform import *
-
+from reportform.dayreport import QDayRepotr
+from spiders import *
+from mainevent import *
 
 class QMyMainWindow(QMainWindow):
     def __init__(self, parent=None):
@@ -15,13 +20,16 @@ class QMyMainWindow(QMainWindow):
         # 一个护士站中最大的科室数量，如果超出此数量则部分科室不会在科室列表界面显示
         self.total_page = 0
         self.max_group_number_every_page = 4
-        self.row_col = {0:(0,0),1:(1,1),2:(1,2),4: (2, 2), 6: (2, 3), 9: (3, 3), 16: (4, 4)}
+        self.row_col = {0: (0, 0), 1: (1, 1), 2: (1, 2), 4: (2, 2), 6: (2, 3), 9: (3, 3), 16: (4, 4)}
         self.current_page_No = 0
         self.page_up = False
         self.page_down = False
         self.show_up_icon = False
         self.show_down_icon = False
-
+        self.mainevent = QMainEvent()
+        self.conn = self.mainevent.conn
+        #收到信号后在主界面的信息窗口显示Socket消息的具体内容
+        self.mainevent.signal_information.connect(self.show_information)
         # self.pix = QBitmap('.'+ os.sep + 'images' + os.sep + 'mask.png')
         # self.pix.scaledToWidth(self.width())
         # self.setMask(self.pix)
@@ -37,14 +45,21 @@ class QMyMainWindow(QMainWindow):
 
         self.ui.tableView_login_message.setContextMenuPolicy(Qt.CustomContextMenu)
         self.ui.tableView_login_message.customContextMenuRequested.connect(self.login_message_generate_menu)
-        # 设置数据库连接
-        self.__openTable()
+        ###########
+
+
+        # self.__openTable()
         # 显示窗体左侧的选医生信息窗
         self.set_tableView_login_message()
         # 显示右侧各科室病人等候情况窗
         self.set_group_waiting_inforamtion()
 
         self.ui.frame_group_queue_information.installEventFilter(self)
+
+    def show_information(self,information_string):
+        self.ui.textEdit_information.setPlainText(
+            self.ui.textEdit_information.toPlainText() + information_string)
+        self.ui.textEdit_information.moveCursor(QTextCursor.End)
 
     def eventFilter(self, object, event):
         if object is self.ui.frame_group_queue_information:
@@ -100,7 +115,9 @@ class QMyMainWindow(QMainWindow):
     def deal_with_direction(self, direction):
         if direction != 0:
             if self.dir[direction] is None:
-                self.group_waiting_arrow = QWaitingArrow(self.arrow_identification[direction],self.current_page_No,self.show_up_icon,self.show_down_icon,self.ui.frame_group_queue_information)
+                self.group_waiting_arrow = QWaitingArrow(self.arrow_identification[direction], self.current_page_No,
+                                                         self.show_up_icon, self.show_down_icon,
+                                                         self.ui.frame_group_queue_information)
         for n in range(1, 5):
             if n == direction:
                 self.dir[direction] = self.group_waiting_arrow
@@ -114,6 +131,11 @@ class QMyMainWindow(QMainWindow):
     def on_action_staff_manage_triggered(self):
         staffsetting = QStaffSetting(self)
         staffsetting.show()
+
+    @pyqtSlot()
+    def on_action_report_triggered(self):
+        qDayRepotr = QDayRepotr(self.conn)
+        qDayRepotr.exec_()
 
     @pyqtSlot()
     def on_action_group_manage_triggered(self):
@@ -147,8 +169,8 @@ class QMyMainWindow(QMainWindow):
         self.total_page = len(rows) // self.max_group_number_every_page
         if len(rows) % self.max_group_number_every_page != 0:
             self.total_page += 1
-        print('总页数：',self.total_page)
-        print('当前页：',self.current_page_No)
+        print('总页数：', self.total_page)
+        print('当前页：', self.current_page_No)
         self.show_icon()
         if len(rows) > self.max_group_number_every_page:
             querystr += " ORDER BY a.ksid offset " + str(
@@ -196,6 +218,7 @@ class QMyMainWindow(QMainWindow):
 
             grid_group_waiting_information.addWidget(group_waiting_information_lists[i], row_no, col_no)
             print(group_waiting_information_lists[i].objectName())
+
     def show_icon(self):
         if (self.total_page > 1) and (self.current_page_No > 0):
             self.show_up_icon = True
