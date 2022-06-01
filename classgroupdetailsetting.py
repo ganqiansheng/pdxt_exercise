@@ -131,3 +131,4 @@ class QGroupDetailSetting(QDialog):
     def on_pushButton_save_clicked(self):
         print('pushButton_save')
 
+

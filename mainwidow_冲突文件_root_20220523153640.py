@@ -41,7 +41,7 @@ class QMyMainWindow(QMainWindow):
 
     @pyqtSlot()
     def on_action_group_manage_triggered(self):
-        print('on_action_group_manage_triggered')
+        # print('on_action_group_manage_triggered')
         groupsetting = QGroupSetting(self)
         groupsetting.show()
 
@@ -83,7 +83,7 @@ class QMyMainWindow(QMainWindow):
         #     group_waiting_information_list.setObjectName('group_waiting_information_list_'+ rows[i][1] + '_'+rows[i][0])
         #     group_waiting_information_lists.append(group_waiting_information_list)
 
-        print(len(group_waiting_information_lists))
+        # print(len(group_waiting_information_lists))
 
         grid_group_waiting_information = QGridLayout(self.ui.frame_group_queue_information)
         # 如果科室数量小于设定的显示科室数量最大值，按科室数量显示
@@ -94,7 +94,7 @@ class QMyMainWindow(QMainWindow):
             row_no = i // (display_group_number // 2 + display_group_number % 2)
             col_no = i % (display_group_number // 2 + display_group_number % 2)
             grid_group_waiting_information.addWidget(group_waiting_information_lists[i], row_no, col_no)
-            print(group_waiting_information_lists[i].objectName())
+            # print(group_waiting_information_lists[i].objectName())
             # group_id = group_waiting_information_lists[i].objectName().split('_')[-1]
             # group_name = group_waiting_information_lists[i].objectName().split('_')[-2]
             #
@@ -145,7 +145,7 @@ class QMyMainWindow(QMainWindow):
     #     print(pos)
 
     def login_message_generate_menu(self, pos):
-        print(pos)
+        # print(pos)
         currentRow = self.ui.tableView_login_message.currentIndex().row()
         if currentRow == -1:
             QMessageBox.warning(self, '提示', '没有数据')
@@ -156,7 +156,7 @@ class QMyMainWindow(QMainWindow):
         room_No = self.model.item(currentRow, 3).text()
         waiting_number = self.model.item(currentRow, 4).text()
         finished_number = self.model.item(currentRow, 5).text()
-        print(doctor_No)
+        # print(doctor_No)
 
         menu = QMenu()
         item1 = menu.addAction('医生姓名:' + doctor_No)

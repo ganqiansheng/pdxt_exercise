@@ -9,7 +9,7 @@ def server_connect():
     database = 'pd_sys'
 
     conn = pymssql.connect(host=host, user=user, password=password, database=database)
-    print(conn)
+    # print(conn)
     if not conn:
         QMessageBox.critical('', '错误提示', '数据库打开错误')
         return '',False

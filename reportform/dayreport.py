@@ -169,8 +169,8 @@ class QDayRepotr(QDialog):
         self.list_giveup_cure = [int(self.ui.tableWidget.item(i, 4).text()) for i in range(self.ui.tableWidget.rowCount())]
         self.list_total_cure = [int(self.ui.tableWidget.item(i, 5).text()) for i in range(self.ui.tableWidget.rowCount())]
 
-        print(self.list_date)
-        print(self.list_first_cure)
+        # print(self.list_date)
+        # print(self.list_first_cure)
 
 
         # plt.figure(figsize=(200,120))

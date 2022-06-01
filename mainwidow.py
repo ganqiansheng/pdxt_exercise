@@ -81,31 +81,31 @@ class QMyMainWindow(QMainWindow):
         # 左
 
         if mouse_x < 20 and abs(mouse_y - height / 2) < 10:
-            print('左')
+            # print('左')
             direction = 1
             self.deal_with_direction(direction)
-            print(self.group_waiting_arrow.objectName())
+            # print(self.group_waiting_arrow.objectName())
             return 1
         # 上
         elif mouse_y < 30 and abs(mouse_x - width / 2) < 20:
-            print('上')
+            # print('上')
             direction = 2
             self.deal_with_direction(direction)
-            print(self.group_waiting_arrow.objectName())
+            # print(self.group_waiting_arrow.objectName())
             return 2
         # 右
         elif (width - mouse_x) < 20 and abs(mouse_y - height / 2) < 10:
-            print('右')
+            # print('右')
             direction = 3
             self.deal_with_direction(direction)
-            print(self.group_waiting_arrow.objectName())
+            # print(self.group_waiting_arrow.objectName())
             return 3
         # 下
         elif (height - mouse_y) < 20 and abs(mouse_x - width / 2) < 10:
-            print('下')
+            # print('下')
             direction = 4
             self.deal_with_direction(direction)
-            print(self.group_waiting_arrow.objectName())
+            # print(self.group_waiting_arrow.objectName())
             return 4
         else:
             direction = 0
@@ -139,7 +139,7 @@ class QMyMainWindow(QMainWindow):
 
     @pyqtSlot()
     def on_action_group_manage_triggered(self):
-        print('on_action_group_manage_triggered')
+        # print('on_action_group_manage_triggered')
         groupsetting = QGroupSetting(self)
         groupsetting.show()
 
@@ -195,7 +195,7 @@ class QMyMainWindow(QMainWindow):
         #     group_waiting_information_list.setObjectName('group_waiting_information_list_'+ rows[i][1] + '_'+rows[i][0])
         #     group_waiting_information_lists.append(group_waiting_information_list)
 
-        print(len(group_waiting_information_lists))
+        # print(len(group_waiting_information_lists))
 
         grid_group_waiting_information = QGridLayout(self.ui.frame_group_queue_information)
         # 如果科室数量小于设定的显示科室数量最大值，按科室数量显示
@@ -217,7 +217,7 @@ class QMyMainWindow(QMainWindow):
             col_no = i % col_number
 
             grid_group_waiting_information.addWidget(group_waiting_information_lists[i], row_no, col_no)
-            print(group_waiting_information_lists[i].objectName())
+            # print(group_waiting_information_lists[i].objectName())
 
     def show_icon(self):
         if (self.total_page > 1) and (self.current_page_No > 0):
@@ -230,7 +230,7 @@ class QMyMainWindow(QMainWindow):
             self.show_down_icon = False
 
     def login_message_generate_menu(self, pos):
-        print(pos)
+        # print(pos)
         currentRow = self.ui.tableView_login_message.currentIndex().row()
         if currentRow == -1:
             QMessageBox.warning(self, '提示', '没有数据')
@@ -242,7 +242,7 @@ class QMyMainWindow(QMainWindow):
         room_No = self.model.item(currentRow, 3).text()
         waiting_number = self.model.item(currentRow, 4).text()
         finished_number = self.model.item(currentRow, 5).text()
-        print(doctor_No)
+        # print(doctor_No)
 
         menu = QMenu()
         item1 = menu.addAction('医生姓名:' + doctor_No)

@@ -123,11 +123,11 @@ class QGroupWaitingInformation(QWidget):
         self.ui.tableWidget_group_waiting_information.installEventFilter(self)
 
     def group_waiting_information_generate_menu(self, pos):
-        print(pos)
+        # print(pos)
         currentRow = self.ui.tableWidget_group_waiting_information.currentIndex().row()
         patient_name = self.ui.tableWidget_group_waiting_information.item(currentRow,1).text()
         queue_No = self.ui.tableWidget_group_waiting_information.item(currentRow,2).text()
-        print(patient_name)
+        # print(patient_name)
         group_waiting_information_menu = QMenu()
         item1 = group_waiting_information_menu.addAction(queue_No + '号：' + patient_name)
         group_waiting_information_menu.addSeparator()
@@ -173,7 +173,7 @@ class QGroupWaitingInformation(QWidget):
             else:
                 if row_height <= self.mouse_y < row_height + currentRow_height:
                     currentRow = i-1
-                    print('当前停留行：', currentRow)
+                    # print('当前停留行：', currentRow)
                     serial_no = self.ui.tableWidget_group_waiting_information.item(currentRow, 0).text()
                     patient_name = self.ui.tableWidget_group_waiting_information.item(currentRow, 1).text()
                     queue_no = self.ui.tableWidget_group_waiting_information.item(currentRow, 2).text()
@@ -192,7 +192,7 @@ class QGroupWaitingInformation(QWidget):
         if object is self.ui.tableWidget_group_waiting_information:
             self.setCursor(Qt.ArrowCursor)
             if event.type() == QEvent.ToolTip:
-                print('鼠标的当前位置为：',event.pos())
+                # print('鼠标的当前位置为：',event.pos())
                 self.update_tooltip_signal.emit(event.pos())
                 # 设置提示气泡显示范围矩形框
                 # QRect(x,y,width,height)

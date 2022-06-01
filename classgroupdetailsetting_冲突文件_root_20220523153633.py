@@ -129,5 +129,5 @@ class QGroupDetailSetting(QDialog):
 
     @pyqtSlot()
     def on_pushButton_save_clicked(self):
-        print('pushButton_save')
+        # print('pushButton_save')
 
